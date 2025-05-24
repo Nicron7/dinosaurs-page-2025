@@ -1,0 +1,90 @@
+---
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot>
+	</body>
+</html>
+
+<style is:global>
+    :root {
+        --primary-font: "Manrope", sans-serif;
+        --secondary-font: "Galindo", sans-serif;
+        --primary-color: oklch(0.6457 0.1006 50.07);
+        --secondary-color: oklch(0.7537 0.1158 101.12);
+        --primary-hover:oklch(0.5609 0.099 49.4);
+        --light-grey:oklch(0.8012 0 101.12);
+        --black:oklch(0.0593 0 101.12);
+        --white:oklch(0.9674 0 101.12);
+    }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+        html {
+            interpolate-size: allow-keywords;
+        }
+    }
+    body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        font-family: var(--primary-font);
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-wrap: balance;
+    }
+    #root,
+    #__next {
+        isolation: isolate;
+    }
+</style>
