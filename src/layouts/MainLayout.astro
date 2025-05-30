@@ -1,28 +1,37 @@
 ---
 const { title } = Astro.props;
+import Navbar from "../components/Navbar.astro";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">  
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+        <script src="https://kit.fontawesome.com/f72612a77d.js" crossorigin="anonymous"></script>
 		<title>{title}</title>
 	</head>
 	<body>
+        <Navbar />
 		<slot>
 	</body>
+
 </html>
 
 <style is:global>
     :root {
-        --primary-font: "Manrope", sans-serif;
-        --secondary-font: "Galindo", sans-serif;
+        --primary-font: "Rubik", sans-serif;
+        --secondary-font: "Londrina Solid", sans-serif;
         --primary-color: oklch(0.6457 0.1006 50.07);
+        --primary-color-glow: oklch(0.6457 0.1006 50.07 / 59.29%);
         --secondary-color: oklch(0.7537 0.1158 101.12);
         --primary-hover:oklch(0.5609 0.099 49.4);
-        --light-grey:oklch(0.8012 0 101.12);
+        --light-grey: oklch(0.8694 0 101.12);
+        --dark-grey:oklch(0.8012 0 101.12);
         --black:oklch(0.0593 0 101.12);
         --white:oklch(0.9674 0 101.12);
     }
@@ -61,6 +70,14 @@ const { title } = Astro.props;
     select {
         font: inherit;
     }
+    ul {
+        list-style: none;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
 
     p,
     h1,
@@ -82,6 +99,7 @@ const { title } = Astro.props;
     h5,
     h6 {
         text-wrap: balance;
+        font-family: var(--secondary-font);
     }
     #root,
     #__next {
