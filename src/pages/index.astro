@@ -52,6 +52,60 @@ import MainLayout from "../layouts/MainLayout.astro";
 			<a href="/dinosaurios" class="about__btn">Ver las distintas especies</a>
 		</div>
 	</section>
+	<section class="eras">
+		<div class="eras__cont">
+			<h2 class="eras__title">¿Cuándo vivieron los Dinosaurios?</h2>
+			<p class="eras__desc">Los dinosaurios no vivieron todos al mismo tiempo. Se desarrollaron, evolucionaron y desaparecieron a lo largo de tres grandes periodos dentro de la <span>Era Mesozoica</span>:</p>
+			<div class="eras__grid">
+				<article class="eras__item">
+					<div class="eras__img__cont">
+						<img src="/triasico.jpg" alt="" class="eras__img">
+					</div>
+					<div class="eras__text">
+						<h3 class="eras__item__title">Triásico</h3>
+						<h4 class="eras__item__subtitle">(hace 252 a 201 millones de años)</h4>
+						<ul class="eras__item__list">
+							<li>Comienzo de los primeros dinosaurios.</li>
+							<li>Clima cálido y seco, con un solo supercontinente: <span>Pangea</span>.</li>
+							<li>Ejemplos: Coelophysis, Eoraptor.</li>
+						</ul>
+						<a href="/periodos/triasico" class="eras__btn">Más información</a>
+					</div>
+				</article>
+				<article class="eras__item">
+					<div class="eras__img__cont">
+						<img src="/jurasico.jpg" alt="" class="eras__img">
+					</div>
+					<div class="eras__text">
+						<h3 class="eras__item__title">Jurásico</h3>
+						<h4 class="eras__item__subtitle">(hace 201 a 145 millones de años)</h4>
+						<ul class="eras__item__list">
+							<li>Los dinosaurios se diversifican y dominan la Tierra.</li>
+							<li>Aparición de los primeros <span>dinosaurios voladores</span> (como Pterodáctilos) y <span>aves primitivas</span>.</li>
+							<li>Ejemplos: Stegosaurus, Allosaurus, Brachiosaurus.</li>
+						</ul>
+						<a href="/periodos/jurasico" class="eras__btn">Más información</a>
+					</div>
+				</article>
+				<article class="eras__item">
+					<div class="eras__img__cont">
+						<img src="/cretacico.jpg" alt="" class="eras__img">
+					</div>
+					<div class="eras__text">
+						<h3 class="eras__item__title">Cretácico</h3>
+						<h4 class="eras__item__subtitle">(hace 145 a 66 millones de años)</h4>
+						<ul class="eras__item__list">
+							<li>Aparecen muchos de los dinosaurios más conocidos.</li>
+							<li>División de continentes y evolución de plantas con flores.</li>
+							<li>Finaliza con una extinción masiva (probablemente causada por un asteroide).</li>
+							<li>Ejemplos: Tyrannosaurus rex, Triceratops, Velociraptor.</li>
+						</ul>
+						<a href="/periodos/cretacico" class="eras__btn">Más información</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
 </MainLayout>
 
 <style>
@@ -181,6 +235,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 				justify-content: center;
 				background-color: var(--light-black);
 				border-radius: 1rem;
+				max-width: 600px;
 			}
 			.about__text {
 				padding: 1rem;
@@ -320,6 +375,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 			display: inline-block;
 			padding: 1rem;
 			background-color: var(--secondary-color);
+			box-shadow: 0 6px 0px var(--secondary-hover);
 			color: var(--white);
 			text-decoration: none;
 			border-radius: 0.5rem;
@@ -377,8 +433,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 					flex-direction: row-reverse;
 					justify-content: center;
 					gap: 2rem;
-					background-color:var(--light-black);
 					padding-left: 4rem;
+					max-width: unset;
 				}
 				.about__img__cont {
 					max-width: 450px;
@@ -405,11 +461,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 					grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 					max-width: 100%;
 					.features__item {
-						transition: transform 0.3s ease;
+						transition: all 0.3s ease;
 						cursor: pointer;
 						&:hover {
 							transform: scale(1.05);
-							background-color: var(--primary-hover);
+							background-color: var(--secondary-hover);
 						}
 					}
 				}
@@ -426,9 +482,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 					}
 					.about__btn {
 						margin: unset;
-						transition: background-color 0.3s ease;
+						transition: all .2s ease;
 						&:hover {
-							background-color: var(--primary-hover);
+							transform: translateY(6px);
+							box-shadow: 0 0px 0px var(--secondary-hover);
+							background-color: var(--secondary-hover);
 						}
 					}
 				}
@@ -440,4 +498,196 @@ import MainLayout from "../layouts/MainLayout.astro";
 			background-size: 18rem, cover;
 		}
 	}
+
+	/* Eras Section Styles */
+
+	.eras {
+		padding: 5rem 0;
+		background-color: var(--light-black);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: var(--white);
+		.eras__cont {
+			max-width: 90%;
+			margin: 0 auto;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.eras__title {
+				font-size: 2.4rem;
+				margin-bottom: 1rem;
+				font-weight: 500;
+				&:after {
+					content: '';
+					display: block;
+					width: 100px;
+					height: 4px;
+					background-color: var(--white);
+					margin: 0.5rem auto;
+					border-radius: 2px;
+				}
+			}
+			.eras__desc {
+				font-size: 1.1rem;
+				color: var(--light-grey);
+				margin-bottom: 2rem;
+				max-width: 60ch;
+				span {
+					color: var(--white);
+					font-weight: 600;
+				}
+			}
+			.eras__grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				justify-items: center;
+			}
+			.eras__item {
+				background-color: var(--secondary-hover);
+				border-radius: 1rem;
+				text-align: left;
+				max-width: 400px;
+				&:nth-child(2) {
+					background-color: var(--primary-hover);
+					.eras__item__list {
+						&::-webkit-scrollbar-track {
+							background-color: var(--primary-color);
+						}
+						li {
+							background-color: var(--primary-color);
+						}
+					}
+					.eras__btn {
+						background-color: var(--primary-color);
+					}
+				}
+				&:nth-child(3) {
+					background-color: var(--dark-green);
+					.eras__item__list {
+						&::-webkit-scrollbar-track {
+							background-color: var(--green);
+						}
+						li {
+							background-color: var(--green);
+						}
+					}
+					.eras__btn {
+						background-color: var(--green);
+					}
+				}
+				.eras__item__title {
+					font-size: 2rem;
+					color: var(--white);
+					font-weight: 500;
+					text-align: center;
+					line-height: 1;
+				}
+				.eras__item__subtitle {
+					font-size: 1rem;
+					color: var(--white);
+					margin-bottom: 1rem;
+					font-family: var(--primary-font);
+					text-align: center;
+					font-weight: 400;
+				}
+				.eras__img__cont {
+					width: 100%;
+					max-height: 230px;
+					overflow: hidden;
+					border-radius: 1rem 1rem 0 0;
+					align-self: stretch;
+				}
+				img {
+					width: 100%;
+					height: auto;
+					border-radius: 1rem 1rem 0 0;
+					margin-bottom: .5rem;
+					object-fit: cover;
+				}
+				.eras__text {
+					padding: 1.5rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+				.eras__btn {
+					display: inline-block;
+					padding: 0.6rem 1.5rem;
+					background-color: var(--secondary-color);
+					box-shadow: 0 4px 0px rgba(0, 0, 0, 0.5);
+					color: var(--white);
+					text-decoration: none;
+					border-radius: 0.5rem;
+					font-weight: 500;
+					margin: 0 auto;
+					margin-top: 1rem;
+					transition: background-color 0.3s ease;
+					transition: all .2s ease;
+					&:hover {
+						transform: translateY(4px);
+						box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+					}
+				}
+				.eras__item__list {
+					color: var(--white);
+					font-size: .9rem;
+					line-height: 1.6;
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
+					&::-webkit-scrollbar-track {
+							background-color: var(--secondary-color);
+						}
+					li {
+						background-color: var(--secondary-color);
+						padding: .5rem;
+						border-radius: .5rem;
+					}
+					span {
+						color: var(--white);
+						font-weight: bold; 
+					}
+				}
+			}
+		}
+	}
+	@media (width > 768px) {
+		.eras {
+			.eras__cont {
+				max-width: 1200px;
+				width: 90%;
+				.eras__grid {
+					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				}
+				.eras__title {
+					font-size: 3rem;
+				}
+				.eras__item {
+					max-width: unset;
+					.eras__item__list {
+						max-height: 175px;
+						overflow-y: auto;
+						padding-right: 8px;
+						box-sizing: content-box;
+						&::-webkit-scrollbar {
+							width: 8px;             
+							height: 10px;             
+						}
+						&::-webkit-scrollbar-thumb {
+							background-color: var(--dark-grey);
+							border-radius: 3px;
+						}
+						}
+						
+					}
+				}
+	
+			}
+		}
+	
+	
 </style>
