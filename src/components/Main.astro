@@ -1,0 +1,319 @@
+<main class="about">
+    <section class="about__section">
+        <p class="about__subtitle">Pero primero que nada...</p>
+        <h2 class="about__title">¿Qué son los Dinosaurios?</h2>
+        <div class="about__flex">
+            <div class="about__img__cont">
+                <img src="/9693731.jpg" alt="" class="about__img">
+            </div>
+            <div class="about__text">
+                <p class="about__desc">Los dinosaurios fueron un grupo diverso de reptiles prehistóricos que dominaron la Tierra durante más de <span>160 millones de años</span>, desde el <span>periodo Triásico</span> (hace unos 250 millones de años) hasta el final del <span>Cretácico</span> (hace 66 millones de años).</p>
+                <p class="about__desc">Eran animales terrestres en su mayoría, pero existieron también especies voladoras y acuáticas. Aunque muchos se extinguieron, <span>las aves actuales son descendientes directos de los dinosaurios</span>.</p>
+            </div>
+        </div>
+    </section> <!-- About section -->
+    <section class="features__section">
+        <h2 class="features__title">Características principales</h2>
+        <ul class="features__list">
+            <li class="features__item">
+                <img src="/tamaños.png" alt="" class="features__img">
+                <span>Diversidad de tamaños:</span> desde menos de 1 metro hasta más de 30 metros de largo</li>
+            <li class="features__item">
+                <img src="/alimentacion.png" alt="" class="features__img">
+                <span>Tipos de alimentación:</span> herbívoros, carnívoros, omnívoros.
+            </li>
+            <li class="features__item">
+                <img src="/erguido.png" alt="" class="features__img">
+                <span>Postura erguida:</span> a diferencia de otros reptiles, sus patas estaban colocadas debajo del cuerpo, permitiéndoles mejor movilidad.
+            </li>
+            <li class="features__item">
+                <img src="/veloz.png" alt="" class="features__img">
+                <span>Velocidad:</span> muchos de los dinosaurios eran veloces, con velocidades de hasta 80 km/h.
+            </li>
+        </ul>
+    </section> <!-- Features section -->
+    <footer class="about__footer">
+        <p class="about__ending">Los dinosaurios no fueron solo monstruos gigantes; <span>fueron parte crucial de la evolución y de la historia de la vida en la Tierra</span>.</p>
+        <a href="/dinosaurios" class="about__btn">Ver las distintas especies</a>
+    </footer>
+</main>
+
+<style>
+    .about {
+    padding: 5rem 0;
+    background: url("/lluvia-asteroides.png") no-repeat top right,linear-gradient(var(--black), var(--black));
+    background-size: 0rem, cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about__section {
+        max-width: 90%;
+        margin: 0 auto;
+        .about__flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-black);
+            border-radius: 1rem;
+            max-width: 600px;
+        }
+        .about__text {
+            padding: 1rem;
+        }
+        .about__subtitle {
+            font-size: 1.1rem;
+            color: var(--light-grey);
+            text-align: center;
+        }
+        .about__title {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 2rem;
+            text-align: center;
+            &:after {
+                content: '';
+                display: block;
+                width: 100px;
+                height: 4px;
+                background-color: var(--primary-color);
+                margin: 0.5rem auto;
+                border-radius: 2px;
+            }
+
+        }
+        .about__img__cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 550px;
+            margin-bottom: 2rem;
+            max-height: 400px;
+            overflow: hidden;
+            border-radius: 1rem 1rem 0 0;
+        }
+        .about__img {
+            border-radius: 1rem 1rem 0 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .about__desc {
+            font-size: 1.1rem;
+            color: var(--light-grey);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            max-width: 55ch;
+            text-align: left;
+            span {
+                color: var(--white);
+                font-weight: 600;
+            }
+        }
+        .about__btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-hover);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+    }
+    .features__section {
+        max-width: 90%;
+        margin: 2rem auto;
+        margin-bottom: 1rem;
+        text-align: center;
+        .features__title {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 2rem;
+            &:after {
+                content: '';
+                display: block;
+                width: 100px;
+                height: 4px;
+                background-color: var(--secondary-color);
+                margin: 0.5rem auto;
+                border-radius: 2px;
+            }
+        }
+        .features__list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 40ch;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            justify-items: center;
+            .features__item {
+                font-size: 1.1rem;
+                color: var(--light-grey);
+                margin-bottom: 0.5rem;
+                text-align: left;
+                line-height: 1.6;
+                background-color: var(--secondary-color);
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                max-width: 330px;
+                span {
+                    color: var(--white);
+                    font-weight: 600;
+                }
+            }
+            .features__img {
+                
+            }
+        }
+    }
+    .about__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    .about__ending {
+        font-size: 1.1rem;
+        color: var(--light-grey);
+        max-width: 50ch;
+        line-height: 1.6;
+        span {
+            color: var(--white);
+            font-weight: 600;
+        }
+    }
+    .about__btn {
+        display: inline-block;
+        padding: 1rem;
+        background-color: var(--secondary-color);
+        box-shadow: 0 6px 0px var(--secondary-hover);
+        color: var(--white);
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        width: 100%;
+        max-width: 25rem;
+        text-align: center;
+    }
+}
+
+/* About Section Media Queries */
+
+@media (width > 480px) {
+    .about {
+        .about__section {
+            .about__title {
+                font-size: 3rem;
+            }
+            .about__text {
+                padding: 2rem;
+            }
+            .about__img__cont {
+                align-self: stretch;
+                max-width: 100%;
+            }
+        }
+        .features__section {
+            .features__title {
+                font-size: 3rem;
+            }
+            .features__list {
+                max-width: 60ch;
+                grid-template-columns: repeat(2, 1fr);
+                .features__img {
+                    display: block;
+                }
+                .features__item {
+                    max-width: unset;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (width > 768px) {
+    .about {
+        background-size: 10rem, cover;
+        background-position:top 3rem right;
+        .about__section {
+            .about__flex {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                justify-content: center;
+                gap: 2rem;
+                padding-left: 4rem;
+                max-width: unset;
+            }
+            .about__img__cont {
+                max-width: 450px;
+                align-self: stretch;
+                margin-bottom: 0;
+                max-height: unset;
+                border-radius: unset;
+            }
+            .about__img {
+                border-radius: 0 1rem 1rem 0;
+            }
+            .about__text {
+                text-align: left;
+                max-width: 54ch;
+                padding: 2rem 0;
+            }
+            .about__title {
+                margin-bottom: 4rem;
+            }
+        }
+        .features__section {
+            margin-top: 5rem;
+            .features__list {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                max-width: 100%;
+                .features__item {
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(1.05);
+                        background-color: var(--secondary-hover);
+                    }
+                }
+            }
+            .features__title {
+                margin-bottom: 4rem;
+            }
+        }
+            .about__footer {
+                flex-direction: row;
+                margin-top: 2rem;
+                .about__ending {
+                    max-width: 50ch;
+                    text-align: left;
+                }
+                .about__btn {
+                    margin: unset;
+                    transition: all .2s ease;
+                    &:hover {
+                        transform: translateY(6px);
+                        box-shadow: 0 0px 0px var(--secondary-hover);
+                        background-color: var(--secondary-hover);
+                    }
+                }
+            }
+        }
+        
+    }
+@media (width > 1200px) {
+    .about {
+        background-size: 18rem, cover;
+    }
+}
+</style>

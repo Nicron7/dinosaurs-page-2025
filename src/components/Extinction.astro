@@ -1,0 +1,424 @@
+<section class="extinction">
+    <div class="extinction__cont">
+        <h2 class="extinction__title">La extinción de los dinosaurios</h2>
+        <p class="extinction__desc">Hace unos <span>66 millones de años</span>, al final del periodo Cretácico, ocurrió uno de los eventos más catastróficos en la historia de la Tierra: <span>una extinción masiva</span> que acabó con el 75% de todas las especies vivas, incluidos los dinosaurios no avianos.</p>
+        <h3 class="extinction__subtitle">¿Qué causó la extinción?</h3>
+        <div class="extinction__main">
+            <div class="extinction__grid__cont">
+                <div class="extinction__grid">
+                    <article class="extinction__grid__item">
+                        <div class="extinction__grid__text">
+                            <h4 class="extinction__grid__subtitle"><i class="fa-solid fa-meteor"></i>Impacto de asteroide</h4>
+                            <ul class="extinction__grid__list">
+                                <li>Un asteroide de unos 10 km de diámetro chocó en la actual <span>Península de Yucatán (México)</span>.</li>
+                                <li>El cráter resultante, llamado <span>Chicxulub</span>, tiene más de 180 km de ancho.</li>
+                                <li>Liberó una energía equivalente a <span>millones de bombas nucleares</span>.</span>.</li>
+                            </ul>
+                        </div>
+                        <div class="extinction__grid__img"><img src="/extinction-section.jpg" alt="asteroide impactando en la tierra"></div>
+                    </article> <!-- Extinction Card -->
+                    <article class="extinction__grid__item">
+                        <div class="extinction__grid__text">
+                            <h4 class="extinction__grid__subtitle"><i class="fa-solid fa-volcano"></i>Actividad volcánica masiva</h4>
+                            <ul class="extinction__grid__list">
+                                <li>Las <span>erupciones en la región del Decán (India)</span> liberaron gases tóxicos a la atmósfera.</span>.</li>
+                                <li>Esto contribuyó a un cambio climático extremo, con enfriamientos y lluvias ácidas.</li>
+                            </ul>
+                        </div>
+                        <div class="extinction__grid__img"><img src="/volcan.jpg" alt="volcan"></div>
+                    </article> <!-- Extinction Card -->
+                    <article class="extinction__grid__item">
+                        <div class="extinction__grid__text">
+                            <h4 class="extinction__grid__subtitle"><i class="fa-solid fa-cloud"></i>Efectos globales</h4>
+                            <ul class="extinction__grid__list">
+                                <li><span>Oscurecimiento del cielo:</span> ceniza y polvo bloquearon la luz solar.</li>
+                                <li><span>Colapso de las cadenas alimenticias:</span> plantas murieron, y con ellas los herbívoros y luego los carnívoros.</li>
+                                <li><span>Cambios en la atmósfera:</span> aumento de gases como el dióxido de azufre y el CO₂.</li>
+                            </ul>
+                        </div>
+                        <div class="extinction__grid__img"><img src="/globales.jpg" alt="efectos globales"></div>
+                    </article> <!-- Extinction Card -->
+                </div>
+            </div>
+            <div class="extinction__grid__prev"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="extinction__grid__next"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="extinction__grid__dots">
+                <div class="extinction__grid__dot extinction__grid__dot--active"></div>
+                <div class="extinction__grid__dot"></div>
+                <div class="extinction__grid__dot"></div>
+            </div>
+        </div>
+        <footer class="extinction__footer">
+            <div class="extinction__footer__text">
+                <h2 class="extinction__footer__title">¿Todos los dinosaurios murieron?</h2>
+                <div class="extinction__footer__img"><img src="/aves.webp" alt="ave roja"></div>
+                <p class="extinction__footer__desc">No todos los dinosaurios se extinguieron. Los <span>dinosaurios avianos</span>, como las aves modernas, sobrevivieron y evolucionaron a partir de algunos grupos de dinosaurios terópodos. Así que, en cierto sentido, ¡los dinosaurios aún están entre nosotros!</p>
+            </div>
+            <div class="extinction__footer__img__desktop"><img src="/aves.webp" alt="ave roja"></div>
+        </footer>
+    </div>
+</section>
+
+<style>
+	.extinction {
+		padding: 5rem 0;
+		background-color: var(--secondary-color);
+		color: var(--white);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.extinction__cont {
+			margin: 0 auto;
+			text-align: center;
+			width: 90%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.extinction__title {
+				font-size: 2.4rem;
+				margin-bottom: 1rem;
+				font-weight: 500;
+				&:after {
+					content: '';
+					display: block;
+					width: 100px;
+					height: 4px;
+					background-color: var(--light-black);
+					margin: 0.5rem auto;
+					border-radius: 2px;
+				}
+			}
+			.extinction__subtitle {
+				font-size: 1.6rem;
+				color: var(--white);
+				margin-bottom: 1rem;
+				font-weight: 500;
+			}
+			.extinction__desc {
+				font-size: 1.1rem;
+				color: var(--white);
+				margin-bottom: 2rem;
+				max-width: 60ch;
+				span {
+					color: var(--white);
+					font-weight: 600;
+				}
+			}
+			.extinction__grid {
+				display: flex;
+				gap: 2rem;
+				align-items: center;
+				transition: all .7s ease;
+				
+			}
+			.extinction__grid__cont {
+				width: 100%;
+				max-width: 1200px;
+				overflow: hidden;
+			}
+			.extinction__grid__dots {
+				display: flex;
+				gap: 0.5rem;
+				margin-top: 1rem;
+				.extinction__grid__dot {
+					width: 10px;
+					height: 10px;
+					background-color: var(--light-black);
+					border-radius: 50%;
+					cursor: pointer;
+					transition: background-color 0.3s ease;
+					&:hover {
+						background-color: var(--white);
+					}
+				}
+				.extinction__grid__dot--active {
+					background-color: var(--white);
+				}
+			}
+			.extinction__grid__prev,
+			.extinction__grid__next {
+				width: 2.8rem;
+				height: 2.8rem;
+				background-color: rgba(0, 0, 0, 0.4);
+				border-radius: 50%;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: var(--white);
+				font-size: 1.5rem;
+				transition: background-color 0.3s ease;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				li {
+					color: var(--white);
+				}
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.7);
+				}
+			}
+			.extinction__grid__next {
+				right: -1rem;
+			}
+			.extinction__grid__prev {
+				left: -1rem;
+			}
+			.extinction__grid__text {
+				padding: 1.5rem;
+			}
+			.extinction__main {
+				position: relative;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 2rem;
+			}
+			.extinction__grid__item {
+				text-align: left;
+				min-width: 100%;
+				display: flex;
+				flex-direction: column-reverse;
+				background-color: var(--secondary-hover);
+				border-radius: 1rem;
+				align-self: stretch;
+				.extinction__grid__img {
+					width: 100%;
+					height: 100%;
+					min-height: 260px;
+					border-bottom: 4px solid var(--light-grey);
+					img {
+						border-radius: 1rem 1rem 0 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				h4 {
+					font-size: 1.5rem;
+					color: var(--white);
+					margin-bottom: 1rem;
+					font-weight: 500;
+					display: flex;
+					gap: 1rem;
+					align-items: center;
+				}
+				.extinction__grid__list {
+					color: var(--light-grey);
+					line-height: 1.6; 
+					font-size: 1rem; 
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
+					width :100%;
+					list-style: disc;
+					padding-left: 1.5rem;
+					
+					span {
+						color: var(--white);
+						font-weight: bold; 
+					}
+				}
+				}
+			}
+			.extinction__footer {
+				width: 100%;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				max-width: 500px;
+				.extinction__footer__text {
+					max-width: 800px;
+					padding: 2rem;
+					border: 2px solid var(--white);
+					border-radius: 1rem;
+					margin-bottom: 2rem;
+					text-align: center;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					.extinction__footer__img {
+						margin: 1.5rem 0;
+						img {
+							width: 100%;
+							max-width: 500px;
+							border-radius: 1rem;
+						}
+					}
+				}
+				.extinction__footer__img__desktop {
+					display: none;
+				}	
+				.extinction__footer__title {
+					font-size: 2rem;
+					color: var(--white);
+				}
+				.extinction__footer__desc {
+					font-size: 1.1rem;
+					color: var(--white);
+					max-width: 45ch;
+					margin: 0 auto;
+					span {
+						color: var(--white);
+						font-weight: bold; 
+					}
+				}
+				
+			}
+		}
+	@media (width > 480px ) {
+		.extinction {
+			.extinction__cont {
+				.extinction__title {
+					font-size: 2.8rem;
+				}
+				.extinction__subtitle {
+					font-size: 1.8rem;
+				}
+				.extinction__grid__cont {
+					width: 90%;
+					margin: 0 auto;
+				}
+				.extinction__grid__item {
+					h4 {
+						font-size: 1.8rem;
+					}
+				}
+			}
+			.extinction__footer {
+				.extinction__footer__text {
+					padding: 3rem;
+					.extinction__footer__img {
+						img {
+							max-width: 600px;
+						}
+					}
+				}
+				.extinction__footer__desc {
+					font-size: 1.1rem;
+					max-width: 50ch;
+				}
+			}
+		}
+	}
+	@media (width > 768px) {
+		.extinction {
+			.extinction__cont {
+				.extinction__grid__item {
+					flex-direction: row;
+					max-width: 300px;
+					height: 450px;
+					align-items: center;
+					h4 {
+						font-size: 2rem;
+					}
+					.extinction__grid__text {
+						padding: 2rem;
+					}
+					.extinction__grid__img {
+						height: 100%;
+						border-radius: 0 1rem 1rem 0;
+						border-left: 4px solid var(--light-grey);
+						border-bottom: unset;
+						img {
+							border-radius: 0 1rem 1rem 0;
+							height: 100%;
+						}
+					}
+				}
+				.extinction__grid__cont {
+					width: 95%;
+					margin: 0 auto;
+				}
+				.extinction__footer {
+					max-width: fit-content;
+					flex-direction: row;
+					border: 2px solid var(--white);
+					padding: 1rem;
+					justify-content: center;
+					border-radius: 1rem;
+					.extinction__footer__text {
+						gap: 1rem;
+						text-align: left;
+						border: unset;
+						align-items: flex-start;
+						.extinction__footer__img {
+							display: none;
+						}
+					}
+					.extinction__footer__img__desktop {
+						display: block;
+						img {
+							width: 100%;
+							max-width: 400px;
+							border-radius: 1rem;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+</style>
+
+<script>
+	const prevBtn = document.querySelector<HTMLElement>('.extinction__grid__prev')!;
+	const nextBtn = document.querySelector<HTMLElement>('.extinction__grid__next')!;
+	const grid = document.querySelector<HTMLElement>('.extinction__grid')!;
+	const dots = document.querySelectorAll<HTMLElement>('.extinction__grid__dot');
+
+	let currentIndex = 0;
+	const items: HTMLElement[] = Array.from(grid.children) as HTMLElement[];
+	const totalItems = items.length;
+
+	function updateDots() {
+		dots.forEach((dot, index) => {
+			if (index === currentIndex) {
+				dot.classList.add('extinction__grid__dot--active');
+			} else {
+				dot.classList.remove('extinction__grid__dot--active');
+			}
+		});
+	}
+	
+	function updateGrid() {
+		const itemWidth = items[0].offsetWidth + 32;
+		const offset = currentIndex * itemWidth;
+		grid.style.transform = `translateX(-${offset}px)`;
+	}
+
+	prevBtn.addEventListener('click', () => {
+		if (currentIndex > 0) {
+			currentIndex--;
+			updateGrid();
+			updateDots();
+		} else {
+			currentIndex = totalItems - 1;
+			updateGrid();
+			updateDots();
+		}
+	});
+	nextBtn.addEventListener('click', () => {
+		if (currentIndex < totalItems - 1) {
+			currentIndex++;
+			updateGrid();
+			updateDots();
+		} else {
+			currentIndex = 0; 
+			updateGrid();
+			updateDots();
+		}
+	});
+
+	dots.forEach((dot, index) => {
+		dot.addEventListener('click', () => {
+			currentIndex = index;
+			updateGrid();
+			updateDots();
+		});
+	});
+	
+</script>
