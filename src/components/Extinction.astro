@@ -62,7 +62,7 @@
 <style>
 	.extinction {
 		padding: 5rem 0;
-		background-color: var(--secondary-color);
+		background: linear-gradient(var(--secondary-dark), var(--secondary-hover));
 		color: var(--white);
 		display: flex;
 		flex-direction: column;
@@ -78,7 +78,6 @@
 			.extinction__title {
 				font-size: 2.4rem;
 				margin-bottom: 1rem;
-				font-weight: 500;
 				&:after {
 					content: '';
 					display: block;
@@ -93,7 +92,6 @@
 				font-size: 1.6rem;
 				color: var(--white);
 				margin-bottom: 1rem;
-				font-weight: 500;
 			}
 			.extinction__desc {
 				font-size: 1.1rem;
@@ -156,7 +154,7 @@
 					color: var(--white);
 				}
 				&:hover {
-					background-color: rgba(0, 0, 0, 0.7);
+					background-color: var(--light-black);
 				}
 			}
 			.extinction__grid__next {
@@ -184,6 +182,7 @@
 				background-color: var(--secondary-hover);
 				border-radius: 1rem;
 				align-self: stretch;
+				border: 4px solid var(--light-grey);
 				.extinction__grid__img {
 					width: 100%;
 					height: 100%;
@@ -230,16 +229,16 @@
 				flex-direction: column;
 				align-items: center;
 				max-width: 500px;
+				margin-top: 2rem;
 				.extinction__footer__text {
 					max-width: 800px;
-					padding: 2rem;
-					border: 2px solid var(--white);
-					border-radius: 1rem;
-					margin-bottom: 2rem;
+					background-color: var(--secondary-dark);
+					padding: 1.5rem;
 					text-align: center;
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+					box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 					.extinction__footer__img {
 						margin: 1.5rem 0;
 						img {
@@ -261,6 +260,7 @@
 					color: var(--white);
 					max-width: 45ch;
 					margin: 0 auto;
+					text-align: left;
 					span {
 						color: var(--white);
 						font-weight: bold; 
@@ -336,15 +336,17 @@
 				.extinction__footer {
 					max-width: fit-content;
 					flex-direction: row;
-					border: 2px solid var(--white);
-					padding: 1rem;
+					padding: 2rem;
+					background-color: var(--secondary-dark);
 					justify-content: center;
 					border-radius: 1rem;
+					box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 					.extinction__footer__text {
 						gap: 1rem;
 						text-align: left;
-						border: unset;
 						align-items: flex-start;
+						background-color: unset;
+						box-shadow: unset;
 						.extinction__footer__img {
 							display: none;
 						}
@@ -369,10 +371,9 @@
 	const nextBtn = document.querySelector<HTMLElement>('.extinction__grid__next')!;
 	const grid = document.querySelector<HTMLElement>('.extinction__grid')!;
 	const dots = document.querySelectorAll<HTMLElement>('.extinction__grid__dot');
-
-	let currentIndex = 0;
 	const items: HTMLElement[] = Array.from(grid.children) as HTMLElement[];
 	const totalItems = items.length;
+	let currentIndex = 0;
 
 	function updateDots() {
 		dots.forEach((dot, index) => {
@@ -401,6 +402,7 @@
 			updateDots();
 		}
 	});
+
 	nextBtn.addEventListener('click', () => {
 		if (currentIndex < totalItems - 1) {
 			currentIndex++;
@@ -420,5 +422,4 @@
 			updateDots();
 		});
 	});
-	
 </script>

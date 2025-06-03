@@ -154,7 +154,7 @@
                 }
             }
             .header__logo {
-                width: 15rem;
+                width: 12rem;
                 margin: 0 auto;
                 .header__logo-link {
                     display: flex;
@@ -241,6 +241,7 @@
             margin-top: 124.75px;
             padding: 1rem 0;
             position: relative;
+            pointer-events: none;
             &:after {
                 content: '';
                 width: 100%;
@@ -321,6 +322,7 @@
     .nav--active {
         transform: translateX(0);
         .nav__list {
+            pointer-events: all;
             &:after {
                 animation: fadeIn 0.2s ease forwards .4s;
             }
@@ -411,6 +413,7 @@
                     display: none;
                 }
                 .header__logo {
+                    width: 13rem;
                     margin: 0;
                 }
                 .header__nav {

@@ -1,0 +1,360 @@
+<section class="fossils">
+    <div class="fossils__cont">
+        <h2 class="fossils__title">¿Cómo sabemos que existieron?</h2>
+        <p class="fossils__desc">Aquí te explicaremos sobre la <span>paleontología</span> y cómo los científicos descubren y estudian a los dinosaurios a través de restos fósiles.</p>
+        <article class="fossils__article">
+            <div class="fossils__article__flex">
+                <div class="fossils__article__text">
+                    <h3 class="fossils__article__title">De hueso a historia: el viaje de un fósil</h3>
+                    <div class="fossils__article__img__cont"><img src="/fossil-article.webp" alt="" class="fossils__article__img"></div>
+                    <p class="fossils__article__desc">Imagina que un enorme dinosaurio cae en la orilla de un río hace más de 70 millones de años. No hay humanos, solo selvas primitivas y volcanes humeantes. Así comienza la historia de un fósil.</p>
+                </div>
+                <div class="fossils__article__img__desktop"><img src="/fossil-article.webp" alt="" class="fossils__article__img"></div>
+            </div>
+            <img src="/down-arrow.png" alt="" class="fossils__article__arrow">
+        </article>
+        <div class="fossils__grid__main">
+            <div class="fossils__grid__cont">
+                <div class="fossils__grid">
+                    <article class="fossils__grid__item">
+                        <div class="fossils__grid__img__cont"><img src="/fossil-1.webp" alt="" class="fossils__grid__img"></div>
+                        <div class="fossils__grid__text">
+                            <h4 class="fossils__grid__title"><i class="fa-solid fa-water"></i>Enterrado por el tiempo</h4>
+                            <p class="fossils__grid__desc">Con el paso de los días, el cuerpo es cubierto por capas de barro, arena y ceniza. Los tejidos blandos desaparecen, pero los huesos quedan protegidos bajo tierra. Con millones de años de presión y minerales, se transforman lentamente en piedra.</p>
+                        </div>
+                    </article>
+                    <article class="fossils__grid__item">
+                        <div class="fossils__grid__img__cont"><img src="/fossil-2.webp" alt="" class="fossils__grid__img"></div>
+                        <div class="fossils__grid__text">
+                            <h4 class="fossils__grid__title"><i class="fa-solid fa-clock"></i>Silencio bajo tierra</h4>
+                            <p class="fossils__grid__desc">Durante siglos, el fósil permanece oculto bajo las capas de la Tierra. Montañas se levantan, ríos cambian su curso, y el planeta evoluciona... hasta que un día, alguien tropieza con algo duro entre las rocas.</p>
+                        </div>
+                    </article>
+                    <article class="fossils__grid__item">
+                        <div class="fossils__grid__img__cont"><img src="/fossil-3.webp" alt="" class="fossils__grid__img"></div>
+                        <div class="fossils__grid__text">
+                            <h4 class="fossils__grid__title"><i class="fa-solid fa-magnifying-glass"></i>El trabajo del paleontólogo</h4>
+                            <p class="fossils__grid__desc">Paleontólogos viajan por el mundo en busca de pistas del pasado. Con pinceles, martillos y paciencia infinita, extraen los fósiles y los llevan a laboratorios, donde reconstruyen esqueletos y reescriben la historia del planeta.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="fossils__grid__dots">
+                    <span class="fossils__grid__dot fossils__grid__dot--active"></span>
+                    <span class="fossils__grid__dot"></span>
+                    <span class="fossils__grid__dot"></span>
+                </div>
+            </div>
+            <div class="fossils__grid__prev"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="fossils__grid__next"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .fossils {
+        padding: 5rem 0;
+        background-color: var(--black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .fossils__cont {
+            max-width: 1200px;
+            width: 90%;
+            text-align: center;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .fossils__title {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            &:after {
+                content: '';
+                display: block;
+                width: 100px;
+                height: 4px;
+                background-color: var(--white);
+                margin: 0.5rem auto;
+                border-radius: 2px;
+            }
+        }
+        .fossils__desc {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 60ch;
+            line-height: 1.6;
+            color: var(--light-grey);
+        }
+        .fossils__article {
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--light-black);
+            padding: 1.5rem;
+        }
+        .fossils__article__flex {
+            .fossils__article__img__desktop {
+                display: none;
+            }
+        }
+        .fossils__article__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .fossils__article__img__cont {
+            max-width: 27rem;
+            margin:  1.5rem 0;
+        }
+        .fossils__article__arrow {
+            width: 3rem;
+            margin-top: 2rem;
+        }
+        .fossils__article__title {
+            font-size: 1.8rem;
+        }
+        .fossils__article__desc {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 60ch;
+            color: var(--light-grey);
+            text-align: left;
+        }
+        .fossils__grid__cont {
+            width: 100%;
+            overflow: hidden;
+            max-width: 500px;
+        }
+        .fossils__grid {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            transition: transform .5s ease;
+        }
+        .fossils__grid__item {
+            border-radius: 1rem;
+            min-width: 100%;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            &:nth-child(2) {
+                .fossils__grid__text {
+                    background-color: var(--primary-hover);
+                }
+           }
+           &:nth-child(3) {
+                .fossils__grid__text {
+                    background-color: var(--secondary-hover);
+                }
+           }
+        }
+        .fossils__grid__img__cont {
+            border-radius: 1rem 1rem 0 0;
+            height: 17rem;
+            max-height: 100%;
+        }
+        .fossils__grid__img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem 1rem 0 0;
+            object-fit: cover;
+            border-bottom: 5px solid var(--white);
+        }
+        .fossils__grid__text {
+           background-color: var(--terciary-hover);
+           padding: 1.5rem;
+           color: var(--white);
+           text-align: left;
+           border-radius: 0 0 1rem 1rem;
+           
+        }
+        .fossils__grid__main {
+            width: 100%;
+            max-width: 1200px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .fossils__grid__prev, .fossils__grid__next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(255, 255, 255, 0.5);
+                color: var(--light-black);
+                border-radius: 50%;
+                width: 2.8rem;
+                font-size: 1.5rem;
+                height: 2.8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 10;
+                transition: background-color 0.3s ease;
+                &:hover {
+                    background-color: var(--white);
+                }
+            }
+            .fossils__grid__next {
+                right: -1rem;
+            }
+            .fossils__grid__prev {
+                left: -1rem;
+            }
+        }
+        .fossils__grid__dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .fossils__grid__dot {
+            width: 10px;
+            height: 10px;
+            background-color: var(--white);
+            border-radius: 50%;
+            display: inline-block;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .fossils__grid__dot--active {
+            opacity: 1;
+        }
+        .fossils__grid__title {
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            border-bottom: 2px solid var(--white);
+        }
+        .fossils__grid__desc {
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 60ch;
+            margin-bottom: 0;
+            margin-top: 1rem;
+        }
+    }
+
+    @media (width > 768px){
+        .fossils {
+            .fossils__article {
+                padding: 2rem;
+                .fossils__article__flex {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    .fossils__article__text {
+                        text-align: left;
+                        align-items: flex-start;
+                        .fossils__article__title{
+                            font-size: 2rem;
+                            margin-bottom: 1rem;
+                        }
+                        .fossils__article__img__cont {
+                            display: none;
+                        }
+                    }
+                    .fossils__article__img__desktop {
+                        display: block;
+                        max-width: 27rem;
+                    }
+                    .fossils__article__text {
+                        max-width: 50%;
+                    }
+                }
+            }
+
+            .fossils__grid {
+                max-width: 90%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+            .fossils__grid__item {
+                width: 100%;
+                min-width: unset;
+            }
+            .fossils__grid__cont {
+                max-width: 1200px;
+            }
+            .fossils__grid__dots {
+                display: none;
+            }
+            .fossils__grid__main {
+                .fossils__grid__prev, .fossils__grid__next {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+
+</style>
+<script>
+	const prevBtn = document.querySelector<HTMLElement>('.fossils__grid__prev')!;
+	const nextBtn = document.querySelector<HTMLElement>('.fossils__grid__next')!;
+	const grid = document.querySelector<HTMLElement>('.fossils__grid')!;
+	const dots = document.querySelectorAll<HTMLElement>('.fossils__grid__dot');
+	const items: HTMLElement[] = Array.from(grid.children) as HTMLElement[];
+	const totalItems = items.length;
+	let currentIndex = 0;
+
+    function updateDots() {
+		dots.forEach((dot, index) => {
+			if (index === currentIndex) {
+				dot.classList.add('fossils__grid__dot--active');
+			} else {
+				dot.classList.remove('fossils__grid__dot--active');
+			}
+		});
+	}
+	
+	function updateGrid() {
+		const itemWidth = items[0].offsetWidth + 32;
+		const offset = currentIndex * itemWidth;
+		grid.style.transform = `translateX(-${offset}px)`;
+	}
+
+	prevBtn.addEventListener('click', () => {
+		if (currentIndex > 0) {
+			currentIndex--;
+			updateGrid();
+			updateDots();
+		} else {
+			currentIndex = totalItems - 1;
+			updateGrid();
+			updateDots();
+		}
+	});
+
+	nextBtn.addEventListener('click', () => {
+		if (currentIndex < totalItems - 1) {
+			currentIndex++;
+			updateGrid();
+			updateDots();
+		} else {
+			currentIndex = 0; 
+			updateGrid();
+			updateDots();
+		}
+	});
+
+	dots.forEach((dot, index) => {
+		dot.addEventListener('click', () => {
+			currentIndex = index;
+			updateGrid();
+			updateDots();
+		});
+	});
+
+</script>
