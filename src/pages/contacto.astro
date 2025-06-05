@@ -1,102 +1,299 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 ---
-<section class="contact">
-    <h1 class="contact__title">Contactanos</h1>
-    <p class="contact__desc">¿Tenés una pregunta o querés aportar información sobre dinosaurios? ¡Escribinos!</p>
 
-    <form class="contact__form" id="contactForm" novalidate>
-            <label>
-                Nombre:
-            <input type="text" name="name" id="name" required />
-        </label>
-
-        <label>
-            Email:
-        <input type="email" name="email" id="email" required />
-        </label>
-
-        <label>
-            Deje su mensaje o pregunta:
-        <textarea name="message" id="message" required></textarea>
-        </label>
-
-        <button type="submit">Enviar</button>
-            <p id="formMessage" class="contact__form__msg"></p>
-    </form>
-
+<MainLayout title="Contacto">
+    <section class="contact">
+        <div class="contact__container">
+            <div class="contact__main">
+                <h1 class="contact__title">Contactanos</h1>
+                <p class="contact__description">
+                    ¿Tenés una pregunta o querés aportar información sobre
+                    dinosaurios? ¡Escribinos!
+                </p>
+                <div class="contact__form-container">
+                    <form class="contact__form" id="contactForm" novalidate>
+                        <label>
+                            Nombre:
+                            <div class="contact__input-wrapper">
+                                <span class="contact__input-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    required
+                                    placeholder="Ej: Juan Pérez"
+                                />
+                            </div>
+                        </label>
+                        <label>
+                            Email:
+                            <div class="contact__input-wrapper">
+                                <span class="contact__input-icon">
+                                    <i class="fa-solid fa-at"></i>
+                                </span>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    placeholder="Ej: juan@email.com"
+                                />
+                            </div>
+                        </label>
+                        <label>
+                            Deje su mensaje o pregunta:
+                            <div class="contact__input-wrapper">
+                                <span class="contact__input-icon--message">
+                                    <i class="fa-solid fa-message"></i>
+                                </span>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    required
+                                    placeholder="Escribí tu mensaje acá..."
+                                ></textarea>
+                            </div>
+                        </label>
+                        <div
+                            class="contact__loader"
+                            id="loadingImage"
+                            style="display: none;"
+                        ></div>
+                        <p id="formMessage" class="contact__form-message"></p>
+                        <button class="contact__submit-button" type="submit">Enviar</button>
+                        <!-- <p id="formMessage" class="contact__form-message"></p>  -->
+                    </form>
+                </div>
+            </div>
+            <div class="contact__image-container">
+                <img class="contact__image" src="/contact-image.jpg" alt="Dinosaurio">
+            </div>
+        </div>
     </section>
 </MainLayout>
 
 <style>
+    .contact {
+        margin: 0 auto;
+        padding-top: 77.92px;
+        padding-bottom: 2rem;
+        background-color: var(--primary-hover);
+    }
 
-.contact {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    color: var(--white);
-}
-.contact__title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-.contact__desc {
-    margin-bottom: 2rem;
-    color: var(--light-grey);
-}
-.contact__form label {
-    display: block;
-    margin-bottom: 1.5rem;
-}
-.contact__form input,
-.contact__form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--light-grey);
-    font-size: 1rem;
-}
-.contact__form button {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-weight: 600;
-}
-.contact__form__msg {
-    margin-top: 1rem;
-    font-weight: bold;
-}
+    .contact__container {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--light-black);
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        color: var(--white);
+        width: 100%;
+        max-width: 1100px;
+    }
+
+    .contact__main {
+        max-width: 1200px;
+        padding: 2rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .contact__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+        text-align: center;
+    }
+
+    .contact__description {
+        margin-bottom: 1rem;
+        color: var(--light-grey);
+        text-align: center;
+    }
+
+    .contact__form-container {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .contact__form {
+        flex-grow: 1;
+        width: 100%;
+        transition: width 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .contact__image {
+        width: 100%;
+        border-radius: 0 1rem 1rem 0;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .contact__image-container {
+        width: 100%;
+        border-radius: 0 1rem 1rem 0;
+        max-height: 100%;
+        flex: 1;
+        align-self: stretch;
+    }
+
+    .contact__form label {
+        display: block;
+        font-weight: 500;
+        color: var(--white);
+    }
+
+    .contact__input-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact__input-icon {
+        position: absolute;
+        left: 15px;
+        font-size: 1rem;
+        top: 50%;
+        color: var(--secondary-color);
+        transform: translateY(-30%);
+    }
+
+    .contact__input-icon--message {
+        position: absolute;
+        left: 15px;
+        font-size: 1rem;
+        top: 20%;
+        color: var(--secondary-color);
+        transform: translateY(-30%);
+    }
+
+    .contact__form input,
+    .contact__form textarea {
+        all: unset;
+        width: 100%;
+        padding: 15px 15px 15px 40px;
+        border-radius: 12px;
+        border: 1px solid var(--dark-grey);
+        box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.05);
+        transition: border 0.3s ease-in-out, background-color 0.3s ease;
+        font-size: 0.95rem;
+        background-color: var(--white);
+        margin-top: 0.5rem;
+        color: var(--black);
+        caret-color: var(--primary-color);
+    }
+
+    .contact__form input::placeholder,
+    .contact__form textarea::placeholder {
+        color: var(--secondary-hover);
+        opacity: 0.7;
+        font-style: italic;
+    }
+
+    .contact__form input:focus,
+    .contact__form textarea:focus {
+        outline: 2px solid var(--primary-color);
+        background-color: var(--white);
+        color: var(--black);
+    }
+
+    .contact__form textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .contact__submit-button {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 1rem 7.5rem;
+        border: 4px outset var(--primary-color-glow);
+        border-radius: 1rem;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+        margin-top: 0.5rem;
+    }
+
+    .contact__submit-button:hover {
+        background-color: var(--primary-hover);
+    }
+
+    .contact__form-message {
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 0.95rem;
+        display: none;
+    }
+
+    .contact__loader {
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        border-top-color: var(--primary-color);
+        animation: spin 1s ease-in-out infinite;
+        margin: 1rem auto;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 </style>
 
 <script>
-const form = document.getElementById('contactForm');
-const message = document.getElementById('formMessage');
+    const form = document.getElementById("contactForm");
+    const message = document.getElementById("formMessage");
+    const loadingImage = document.getElementById("loadingImage");
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const msg = form.message.value.trim();
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const msg = form.message.value.trim();
 
-    if (!name || !email || !msg) {
-        message.textContent = 'Todos los campos son obligatorios.';
-        message.style.color = 'red';
-    return;
-    }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        message.textContent = 'Ingresá un email válido.';
-        message.style.color = 'red';
-    return;
-    }
+        if (!name || !email || !msg) {
+            message.textContent = "Todos los campos son obligatorios.";
+            message.style.color = "var(--secondary-color)";
+            message.style.display = "block";
+            return;
+        }
 
-    message.textContent = '¡Mensaje enviado con éxito! (simulado)';
-    message.style.color = 'green';
-    form.reset();
-});
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            message.textContent = "Ingresá un email válido.";
+            message.style.color = "var(--secondary-color)";
+            message.style.display = "block";
+            return;
+        }
+
+        loadingImage.style.display = "block";
+        message.style.display = "block";
+        message.textContent = "";
+        
+        setTimeout(() => {
+            loadingImage.style.display = "none";
+            message.textContent = "¡Mensaje enviado con éxito!";
+            message.style.color = "var(--green)";
+            form.reset();
+        }, 2000);
+        
+    });
 </script>
-
-

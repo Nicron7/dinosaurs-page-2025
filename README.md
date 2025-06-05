@@ -8,40 +8,44 @@ pnpm create astro@latest -- --template minimal
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+# 🦖 Proyecto Dinosaurios
 
-## 🚀 Project Structure
+Este proyecto consiste en una página web educativa e informativa sobre dinosaurios, desarrollada como parte de una entrega académica. Está construida con Astro y tiene como objetivo presentar de forma clara y visual contenidos sobre las distintas eras y los dinosaurios.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚧 Secciones del sitio
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+El sitio está compuesto por 5 secciones principales:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. **Períodos:** explicación de los tres períodos de la era Mesozoica.
+2. **Dinosaurios:** información sobre distintas especies.
+3. **Curiosidades:** datos interesantes con buscador interactivo.
+4. **Index:** visualización opcional según implementación.
+5. **Formulario de contacto:** formulario de contacto para cualquier pregunta y/o aporte informativo.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🧑‍💻 Tecnologías utilizadas
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Astro
+- HTML + CSS (con variables y animaciones)
+- JavaScript para interacciones
+- OKLCH para colores accesibles
+- Responsive Design
 
-## 🧞 Commands
+## 🛠️ Instrucciones de instalación
 
-All commands are run from the root of the project, from a terminal:
+1. Cloná el repositorio:
+   ```bash
+   git clone git@github.com:Nicron7/dinosaurs-page-2025.git
+   cd proyecto-dinosaurios
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+2. Instalá las dependencias:
+   ```bash
+   pnpm install
+   ```
 
-## 👀 Want to learn more?
+3. Inicia el entorno de desarrollo:
+   ```bash
+   pnpm dev
+   ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+4. Accede a http://localhost:3000
+
