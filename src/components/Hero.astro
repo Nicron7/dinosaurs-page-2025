@@ -4,6 +4,9 @@
         <div class="hero__text">
             <h1 class="hero__title">Sumérgete en el increíble mundo de los <span>Dinosaurios</span>!</h1>
             <p class="hero__desc">Descubre la historia y la diversidad de los dinosaurios en esta emocionante aventura de exploración.</p>
+			<div class="hero__btn__cont">
+				<a href="/contacto" class="hero__btn"><img src="/hero-message.png" alt="">Déjanos tu mensaje</a>
+			</div>
         </div>
     </article>
 </section>
@@ -60,15 +63,40 @@
 				animation: fadeIn 1s ease-in-out .4s forwards;
 				max-width: 40ch;
 			}
+			.hero__text {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
 			.hero__btn {
-				display: inline-block;
-				padding: 0.8rem 1.5rem;
+				display: flex;
+				padding: 0.6rem 1rem;
+				align-items: center;
 				background-color: var(--primary-color);
 				color: var(--white);
 				text-decoration: none;
 				border-radius: 0.5rem;
 				font-weight: 600;
 				transition: background-color 0.3s ease;
+				margin-top: 1.5rem;
+				font-size: 1.1rem;
+				gap: 1rem;
+				box-shadow: 0 6px 0px var(--primary-hover);
+				transition: all 0.2s ease;
+				
+				img {
+					width: 2.5rem;
+				}
+				&:hover {
+					transform: translateY(6px);
+					box-shadow: 0 0px 0px var(--primary-hover);
+					background-color: var(--primary-hover);
+				}
+			}
+			.hero__btn__cont {
+				opacity: 0;
+				animation: fadeIn 1s ease-in-out .6s forwards;
 			}
 		}
 	}
@@ -98,6 +126,10 @@
 				}
 				.hero__text {
 					width: 50%;
+					align-items: flex-start;
+				}
+				.hero__btn {
+					padding: .6rem 2rem;
 				}
 				.hero__desc {
 					text-align: left;

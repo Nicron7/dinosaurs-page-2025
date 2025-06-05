@@ -1,0 +1,230 @@
+<footer class="footer">
+    <div class="footer__cont">
+        <div class="footer__logo__cont">
+            <div class="footer__logo"><img src="/logo-white.png" alt=""></div>
+        </div>
+        <div class="footer__grid">
+            <article class="footer__grid__item">
+                <h3 class="footer__grid__title">General</h3>
+                <nav class="footer__nav">
+                    <ul class="footer__nav__list">
+                        <li><a href="/"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                        <li><a href="/periodos"><i class="fa-solid fa-book"></i>Períodos</a></li>
+                        <li><a href="/dinosaurios/1"><i class="fa-solid fa-meteor"></i>Dinosaurios</a></li>
+                        <li><a href="/curiosidades"><i class="fa-solid fa-circle-question"></i>Curiosidades</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="footer__grid__item">
+                <h3 class="footer__grid__title">Redes</h3>
+                <nav class="footer__media">
+                    <ul class="footer__media__list">
+                        <li><a href=""><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                        <li><a href=""><i class="fa-brands fa-square-x-twitter"></i>Twitter</a></li>
+                        <li><a href=""><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-square-github"></i>Github</a></i></li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="footer__grid__item">
+                <h3 class="footer__grid__title">Recursos</h3>
+                <nav class="footer__resources">
+                    <ul class="footer__resources__list">
+                        <li><a href="">Documentación</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Tutoriales</a></li>
+                        <li><a href="">Comunidad</a></i></li>
+                        <li><a href="">Ilustraciones</a></i></li>
+                    </ul>
+                </nav>
+            </article>
+            <div class="footer__img"><img src="/dinosaur-footer.png" alt=""></div>
+        </div>
+        <article class="footer__bottom">
+            <div class="footer__message">
+                <p class="footer__message__text">© 2025 DinoPedia. Todos los derechos reservados.</p>
+                <p class="footer__message__text">Creado por <a target="_blank" href="https://github.com/Nicron7">Nicolás Claure </a> y <a target="_blank" href="https://github.com/Danadty">Dana Torres</a></a>
+            </div>
+        </article>
+    </div>
+</footer>
+
+<style>
+	.footer {
+		background-color: var(--light-black);
+		color: var(--white);
+		padding: 2rem 0;
+	}
+
+	.footer__cont {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.footer__logo img {
+		max-width: 10rem;
+
+	}
+	.footer__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.footer__grid__item {
+		flex: 1;
+	}
+
+	.footer__grid__title {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.footer__nav {
+		list-style-type: none;
+		padding: 0;
+	}
+	.footer__logo__cont {
+		width: 100%;
+		max-width: 1100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer__nav__list {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.footer__nav__list a {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		i {
+			font-size: 1.2rem;
+		}
+	}
+	.footer__media {
+		.footer__media__list {
+			display: flex;
+			list-style-type: none;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+			li {
+				line-height: 1;
+				a {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+				}
+				i {
+					font-size: 1.45rem;
+				}
+			}
+		}
+	}
+	.footer__resources {
+		.footer__resources__list {
+			display: flex;
+			list-style-type: none;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+			li {
+				line-height: 1;
+				a {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+				}
+			}
+		}
+	}
+
+	a {
+	    color: var(--white);
+	}
+
+	.footer__bottom {
+		width: 100%;
+		margin-top: 2rem;
+		max-width: 1100px;
+		&:before {
+			content: "";
+			display: block;
+			width: 90%;
+			height: 1px;
+			background-color: var(--dark-grey);
+			margin: 0 auto;
+			margin-bottom: 2rem;
+		}
+	}
+	.footer__message {
+		text-align: center;
+		width: 100%;
+		.footer__message__text {
+			font-weight: 300;
+			font-size: .9rem;
+			color: var(--light-grey);
+			a {
+				font-weight: 600;
+			}
+			&:nth-child(2) {
+				margin-top: 1rem;
+			}
+		}
+	}
+	@media (width > 480px) {
+		.footer__grid {
+			max-width: 1100px;
+			align-items: center;
+			justify-items: center;
+
+		}
+	}
+
+	@media (width > 768px) {
+		.footer__grid {
+			width: 100%;
+			grid-template-columns: repeat(4, 1fr);
+		}
+		.footer__logo__cont {
+			justify-content: flex-start;
+
+		}
+		.footer__bottom {
+			&:before {
+				width: 100%;
+			}
+		}
+		.footer__media__list, .footer__resources__list, .footer__nav__list {
+			li {
+				a {
+					transition: color 0.2s ease;
+				}
+				&:hover a{
+					color: var(--primary-color);
+				}
+			}
+			
+		}
+		.footer__message {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.footer__message__text {
+				&:nth-child(2) {
+					margin-top: unset;
+				}
+		}
+		}
+	}
+</style>

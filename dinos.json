@@ -1,5 +1,4 @@
-{
-  "dinosaurios": [
+[
     {
       "nombre": "Tyrannosaurus Rex",
       "tipo": "Carnívoro",
@@ -757,4 +756,4 @@
       "imagen_url": "/images/kentrosaurus.jpg"
     }
   ]
-}
+

@@ -1,4 +1,15 @@
+---
+const currentPage = Astro.url.pathname
 
+const navLinks = [
+  { href: "/", text: "Inicio", class: "fa-solid fa-house"},
+  { href: "/periodos", text: "Períodos", class:"fa-solid fa-book" },
+  { href: "/dinosaurios/1", text: "Dinosaurios", class:"fa-solid fa-meteor"}, 
+  { href: "/curiosidades", text: "Curiosidades", class:"fa-solid fa-circle-question"},
+  { href: "/contacto", text: "Contacto", class:"fa-solid fa-envelope"},
+];
+
+---
 <header class="header">
     <div class="header__cont">
         <div class="header__hamburger">
@@ -13,22 +24,12 @@
         </div>
         <nav class="header__nav">
             <ul class="header__nav__list">
-                <li class="header__nav__item">
-                    <i class="fa-solid fa-house header__nav__icon--active"></i>
-                    <a href="/" class="header__nav__link header__nav__link--active">Inicio</a>
-                </li>
-                <li class="header__nav__item">
-                    <i class="fa-solid fa-book"></i>
-                    <a href="/about" class="header__nav__link">Períodos</a>
-                </li>
-                <li class="header__nav__item">
-                    <i class="fa-solid fa-meteor"></i>
-                    <a href="/blog" class="header__nav__link">Dinosaurios</a>
-                </li>
-                <li class="header__nav__item">
-                    <i class="fa-solid fa-circle-question"></i>
-                    <a href="/contact" class="header__nav__link">Curiosidades</a>
-                </li>
+                {navLinks.map((link) => (
+                    <li class="header__nav__item">
+                        <i class={ currentPage === link.href ? link.class + " header__nav__icon--active" : link.class}></i>
+                        <a href={link.href} class={currentPage === link.href ? "header__nav__link header__nav__link--active" : "header__nav__link"}>{link.text}</a>
+                    </li>
+                ))}
             </ul>
         </nav>
     </div>
@@ -50,15 +51,19 @@
         </li>
         <li class="nav__item">
             <i class="fa-solid fa-book"></i>
-            <a href="/about" class="nav__link">Períodos</a>
+            <a href="/periodos" class="nav__link">Períodos</a>
         </li>
         <li class="nav__item">
             <i class="fa-solid fa-meteor"></i>
-            <a href="/blog" class="nav__link">Dinosaurios</a>
+            <a href="/dinosaurios/1" class="nav__link">Dinosaurios</a>
         </li>
         <li class="nav__item">
             <i class="fa-solid fa-circle-question"></i>
-            <a href="/contact" class="nav__link">Curiosidades</a>
+            <a href="/curiosidades" class="nav__link">Curiosidades</a>
+        </li>
+        <li class="nav__item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="/contacto" class="nav__link">Contacto</a>
         </li>
     </ul>
     <div class="nav__theme">
@@ -97,7 +102,7 @@
     /* Header Styles */
 
     .header {
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 1rem 1.5rem;
         position: fixed;
         width: 100%;
@@ -123,6 +128,19 @@
                         align-items: center;
                         gap: .5rem;
                         cursor: pointer;
+                        &:last-child {
+                            border: 1px solid var(--white);
+                            padding: .5rem 1rem;
+                            border-radius: 5px;
+                            transition: all .2s ease-in-out;
+                            &:hover {
+                                background-color: var(--primary-hover);
+                                border-color: var(--primary-hover);
+                            }
+                            &:hover i, &:hover .header__nav__link {
+                                color: var(--white);
+                            }
+                        }
                         
                         &:hover i{
                             color: var(--primary-color);
@@ -339,6 +357,9 @@
             }
             &:nth-child(4) {
                 animation: fadeIn 0.2s ease forwards .35s;
+            }
+            &:nth-child(5) {
+                animation: fadeIn 0.2s ease forwards .4s;
             }
         }
         .nav__header {

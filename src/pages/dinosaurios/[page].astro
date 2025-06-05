@@ -1,0 +1,84 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import dinos from "../../../dinos.json"
+
+import Dinocard from "../../components/Dinocard.astro";
+
+export const getStaticPaths = ({ paginate }) => {
+   return paginate(dinos, {
+      pageSize: 12
+   })
+};
+const { page } = Astro.props;
+console.log(dinos, page)
+---
+
+
+<MainLayout title="DinoPedia - Dinosaurios">
+    <section class="dinos">
+        <h2 class="dinos__title">Dinosaurios</h2>
+        <div class="dinos__grid">
+            {
+                page.data.map((dino: any) => (
+                    <Dinocard dino={dino}></Dinocard>
+                ))
+            }
+        </div>
+        <div class="dinos__flex">
+            <a href={page.url.prev} class="dinos__prev"><i class="fa-solid fa-arrow-left"></i></a>
+            <p class="dinos__pages">{page.currentPage} de {page.lastPage}</p>
+            <a href={page.url.next} class="dinos__next"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+</MainLayout>
+
+<style>
+    .dinos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        width: 100%;
+        padding-top: calc(77.92px + 2rem);
+        padding-bottom: 2rem;
+        background-color: var(--light-black);
+        border-bottom: 2px solid var(--light-grey);
+        .dinos__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            justify-items: center;
+        }
+        .dinos__title {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            &:after {
+                content: '';
+                display: block;
+                width: 80px;
+                height: 4px;
+                background-color: var(--light-grey);
+                margin: 0.5rem auto;
+                border-radius: 2px;
+            }
+        }
+        .dinos__flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 2rem;
+            .dinos__prev, .dinos__next {
+                color: var(--white);
+                font-size: 1.5rem;
+            }
+            .dinos__pages {
+                color: var(--white);
+                font-size: 1.2rem;
+        }}
+    }
+</style>

@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -17,9 +18,9 @@ import Navbar from "../components/Navbar.astro";
 	</head>
 	<body>
         <Navbar />
-		<slot>
+		<slot/>
+        <Footer/>
 	</body>
-
 </html>
 
 <style is:global>
@@ -29,13 +30,16 @@ import Navbar from "../components/Navbar.astro";
         --primary-color: oklch(0.6457 0.1006 50.07);
         --primary-color-glow: oklch(0.6457 0.1006 50.07 / 59.29%);
         --primary-hover:oklch(0.5609 0.099 49.4);
+        --primary-dark: oklch(0.4955 0.106 49.4);
         --secondary-color: oklch(0.5104 0.1269 13.75);
+        --secondary-color-glow: oklch(0.4303 0.1263 13.75 / 80.95%);
         --secondary-hover: oklch(0.4303 0.1263 13.75);
         --secondary-dark: oklch(0.3531 0.1116 13.49);
         --terciary-color: oklch(0.6677 0.0893 235.62);
         --terciary-hover: oklch(0.549 0.0893 235.62);
-        --green: oklch(0.6291 0.1404 153.18);
-        --dark-green: oklch(0.55 0.1404 153.18);
+        --green: oklch(0.55 0.1404 153.18);
+        --green-glow: oklch(0.55 0.1404 153.18 / 60.29%);
+        --dark-green: oklch(0.3971 0.1009 153.25);
         --light-grey: oklch(0.8694 0 101.12);
         --dark-grey:oklch(0.8012 0 101.12);
         --light-black: oklch(0.1929 0 32.32);

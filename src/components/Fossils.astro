@@ -7,7 +7,7 @@
                 <div class="fossils__article__text">
                     <h3 class="fossils__article__title">De hueso a historia: el viaje de un fósil</h3>
                     <div class="fossils__article__img__cont"><img src="/fossil-article.webp" alt="" class="fossils__article__img"></div>
-                    <p class="fossils__article__desc">Imagina que un enorme dinosaurio cae en la orilla de un río hace más de 70 millones de años. No hay humanos, solo selvas primitivas y volcanes humeantes. Así comienza la historia de un fósil.</p>
+                    <p class="fossils__article__desc">Imagina que un enorme dinosaurio cae en la orilla de un río hace más de <span>70 millones de años</span>. No hay humanos, solo selvas primitivas y volcanes humeantes. Así comienza <span>la historia de un fósil</span>.</p>
                 </div>
                 <div class="fossils__article__img__desktop"><img src="/fossil-article.webp" alt="" class="fossils__article__img"></div>
             </div>
@@ -47,6 +47,28 @@
             <div class="fossils__grid__prev"><i class="fa-solid fa-angle-left"></i></div>
             <div class="fossils__grid__next"><i class="fa-solid fa-angle-right"></i></div>
         </div>
+        <footer class="fossils__footer">
+            <article class="fossils__footer__cont">
+                <div class="fossils__footer__top">
+                    <h3 class="fossils__footer__title">Lo que los fósiles nos cuentan</h3>
+                    <div class="fossils__footer__imgs">
+                        <img class="fossils__footer__img" src="/fossil-footer.webp" alt="">
+                        <img class="fossils__footer__img" src="/fossil-footer-2.webp" alt="">
+                        <img class="fossils__footer__img" src="/fossil-footer-3.webp" alt="">
+                        <img class="fossils__footer__img" src="/fossil-footer-4.webp" alt="">
+                    </div>
+                </div>
+                <div class="fossils__footer__text">
+                    <h3 class="fossils__footer__title__desktop">Lo que los fósiles nos cuentan</h3>
+                    <ul class="fossils__footer__list">
+                        <li class="fossils__footer__item">Cómo caminaban los dinosaurios (a través de huellas).</li>
+                        <li class="fossils__footer__item">Qué comían (por dientes y coprolitos).</li>
+                        <li class="fossils__footer__item">Cómo eran sus crías (por huevos fosilizados).</li>
+                        <li class="fossils__footer__item">Incluso si tenían plumas o escamas.</li>
+                    </ul>
+                </div>
+            </article>
+        </footer>
     </div>
 </section>
 
@@ -85,6 +107,10 @@
             max-width: 60ch;
             line-height: 1.6;
             color: var(--light-grey);
+            span {
+                color: var(--white);
+                font-weight: 600;
+            }
         }
         .fossils__article {
             margin-bottom: 3rem;
@@ -93,6 +119,7 @@
             align-items: center;
             background-color: var(--light-black);
             padding: 1.5rem;
+            max-width: 68rem;
         }
         .fossils__article__flex {
             .fossils__article__img__desktop {
@@ -121,6 +148,10 @@
             max-width: 60ch;
             color: var(--light-grey);
             text-align: left;
+            span {
+                color: var(--white);
+                font-weight: 600;
+            }
         }
         .fossils__grid__cont {
             width: 100%;
@@ -131,7 +162,7 @@
             display: flex;
             gap: 2rem;
             align-items: center;
-            transition: transform .5s ease;
+            transition: transform .7s ease;
         }
         .fossils__grid__item {
             border-radius: 1rem;
@@ -152,8 +183,9 @@
         }
         .fossils__grid__img__cont {
             border-radius: 1rem 1rem 0 0;
-            height: 17rem;
+            min-height: 17rem;
             max-height: 100%;
+            height: 100%;
         }
         .fossils__grid__img {
             width: 100%;
@@ -241,6 +273,79 @@
             margin-bottom: 0;
             margin-top: 1rem;
         }
+        .fossils__footer {
+            width: 100%;
+            background-color: var(--light-black);
+            padding: 2rem;
+            margin-top: 3rem;
+            max-width: 600px;
+            .fossils__footer__cont {
+                max-width: 100%;
+                margin: 0 auto;
+                text-align: left;
+                color: var(--white);
+              
+                .fossils__footer__img {
+                    width: clamp(100px, 45%, 180px);
+                    object-fit: contain;
+                    height: auto;
+                    &:nth-child(3), &:nth-child(4) {
+                        display: none;
+                    }
+                }
+                .fossils__footer__imgs {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    width: 100%;
+                }
+                .fossils__footer__top {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin-bottom: 1.5rem;
+                    width: 100%;
+                }
+                .fossils__footer__text {
+                    .fossils__footer__title__desktop {
+                        display: none;
+                    }
+                }
+                .fossils__footer__title {
+                    font-size: 1.8rem;
+                    
+                }
+                .fossils__footer__list {
+                    list-style-type: disc;
+                    padding-left: 1.5rem;
+                    .fossils__footer__item {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (width > 550px) {
+        .fossils {
+            .fossils__cont {
+                .fossils__footer {
+                    .fossils__footer__cont {
+                        .fossils__footer__imgs {
+                            justify-content: space-between;
+                            .fossils__footer__img {
+                                width: 100%;
+                                width: clamp(100px, 30%, 180px);
+                                &:nth-child(3) {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @media (width > 768px){
@@ -295,8 +400,52 @@
                     display: none;
                 }
             }
+            .fossils__footer {
+                max-width: 1000px;
+                .fossils__footer__cont {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .fossils__footer__img {
+                        width: 100%;
+                        object-fit: unset;
+                        min-width: 10rem;
+                        &:nth-child(4) {
+                            display: block;
+                        }
+                        &:nth-child(1), &:nth-child(3) {
+                            place-self: end;
+                        }
+                    }
+                    .fossils__footer__top {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 1rem;
+                        width: 100%;
+                        max-width: 400px;
+                        margin: 0;
+                    }
+                    .fossils__footer__imgs {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: unset;
+                        width: fit-content;
+                    }
+                    .fossils__footer__title {
+                        display: none;
+                    }
+                    .fossils__footer__text {
+                        .fossils__footer__title__desktop {
+                            display: block;
+                            margin-bottom: 1rem;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
         }
     }
+    
     
 
 </style>
