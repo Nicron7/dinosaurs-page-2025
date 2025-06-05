@@ -1,7 +1,6 @@
 ---
 const  { dino } = Astro.props
-const images = import.meta.glob<{ default: ImageMetadata }>("/images/.{jpeg,jpg,png,gif,svg}");
-const imageDefault = "/images/default.jpg"
+const imageDefault = "/images/default.webp"
 let color = "card-red"
 const { nombre, tipo, periodo, longitud_aproximada, peso_aproximado, descripcion, imagen_url } = dino
 
@@ -15,9 +14,9 @@ if (periodo.includes("Jurásico")) {
 
 
 
-<div class={color + " card"}>
+<div class={color + " card"} data-dieta={tipo} data-era={periodo}>
     <div class="card__img__cont">
-        <img src={images[imagen_url] ? imagen_url : imageDefault} alt="" class="card__img">
+        <img src={imagen_url || imageDefault} alt="" class="card__img">
     </div>
     <div class="card__text">
         <h3 class="card__title">{nombre}</h3>
@@ -74,7 +73,6 @@ if (periodo.includes("Jurásico")) {
         display: flex;
         gap: .5rem;
         align-items: center;
-        margin-bottom: .5rem;
         cursor: pointer;
         i {
             transition: all .3s ease-in-out;
@@ -87,6 +85,7 @@ if (periodo.includes("Jurásico")) {
     .card__desc {
         height: 0;
         transition: height .3s ease-in-out;
+        margin-top: .5rem;
     }
     .card__desc--active {
         height: auto;
@@ -113,6 +112,7 @@ if (periodo.includes("Jurásico")) {
     }
     .card__img__cont {
         overflow: hidden;
+        min-height: 250px;
         max-height: 250px;
         width: 100%;
     }

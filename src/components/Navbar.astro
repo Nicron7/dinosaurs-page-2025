@@ -25,10 +25,10 @@ const navLinks = [
         <nav class="header__nav">
             <ul class="header__nav__list">
                 {navLinks.map((link) => (
-                    <li class="header__nav__item">
+                    <a href={link.href} class="header__nav__item">
                         <i class={ currentPage === link.href ? link.class + " header__nav__icon--active" : link.class}></i>
-                        <a href={link.href} class={currentPage === link.href ? "header__nav__link header__nav__link--active" : "header__nav__link"}>{link.text}</a>
-                    </li>
+                        <li  class={currentPage === link.href ? "header__nav__link header__nav__link--active" : "header__nav__link"}>{link.text}</li>
+                    </a>
                 ))}
             </ul>
         </nav>
@@ -66,12 +66,8 @@ const navLinks = [
             <a href="/contacto" class="nav__link">Contacto</a>
         </li>
     </ul>
-    <div class="nav__theme">
-        <label for="theme-toggle" class="nav__theme__label">
-            Dark Mode
-            <input type="checkbox" id="theme-toggle" class="nav__theme__toggle">
-            <span class="nav__theme__slider"></span>
-        </label>
+    <div class="nav__img">
+        <img src="/dinosaur-footer.png" alt="">
     </div>
 </nav>
 
@@ -127,21 +123,7 @@ const navLinks = [
                         display: flex;
                         align-items: center;
                         gap: .5rem;
-                        cursor: pointer;
-                        &:last-child {
-                            border: 1px solid var(--white);
-                            padding: .5rem 1rem;
-                            border-radius: 5px;
-                            transition: all .2s ease-in-out;
-                            &:hover {
-                                background-color: var(--primary-hover);
-                                border-color: var(--primary-hover);
-                            }
-                            &:hover i, &:hover .header__nav__link {
-                                color: var(--white);
-                            }
-                        }
-                        
+                        cursor: pointer;                
                         &:hover i{
                             color: var(--primary-color);
                         }
@@ -297,45 +279,12 @@ const navLinks = [
             }
         }
     }
-    .nav__theme {
+    .nav__img {
         display: flex;
         align-items: center;
-        color: var(--white);
-        font-weight: 500;
-        margin-top: 2rem;
         opacity: 0;
+        max-width: 14rem;
         animation: fadeOut 0.2s ease-in-out forwards;
-        .nav__theme__label {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            gap: 1rem;
-            .nav__theme__toggle {
-                display: none;
-            }
-            .nav__theme__slider {
-                width: 2rem;
-                height: 1rem;
-                background-color: var(--primary-color);
-                border-radius: 50px;
-                position: relative;
-                transition: background-color 0.3s ease-in-out;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 0.1rem;
-                    left: 0.1rem;
-                    width: 0.8rem;
-                    height: 0.8rem;
-                    background-color: var(--light-black);
-                    border-radius: 50%;
-                    transition: transform 0.2s ease-in-out;
-                }
-            }
-            input[type="checkbox"]:checked + .nav__theme__slider::before {
-                transform: translateX(1rem);
-            }
-        }
     }
     .nav--active {
         transform: translateX(0);
@@ -371,7 +320,7 @@ const navLinks = [
                 animation: sladeIn 0.4s ease forwards .1s;
             }
         }
-        .nav__theme {
+        .nav__img {
             animation: fadeIn 0.2s ease forwards .45s;
         }
     }
@@ -450,6 +399,9 @@ const navLinks = [
     const nav = document.querySelector<HTMLElement>('.nav')!;
     const headerCover = document.querySelector<HTMLElement>('.header__cover')!;
     const navClose = document.querySelector<HTMLElement>('.nav__close')!;
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const swipeThreshold = 50;
 
     hamburger.addEventListener('click', () => {
         nav.classList.toggle('nav--active');
@@ -470,4 +422,25 @@ const navLinks = [
         hamburger.classList.remove('active');
         headerCover.classList.remove('header__cover--active');
     }
+
+    document.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    document.addEventListener('touchend', e => {
+         touchEndX = e.changedTouches[0].screenX;
+
+    const swipeDistance = touchEndX - touchStartX;
+    
+    if (touchStartX < 30 && swipeDistance > swipeThreshold) {
+        nav.classList.add('nav--active');
+        headerCover.classList.remove('hidden');
+    }
+
+    if (nav.classList.contains('nav--active') && swipeDistance < -swipeThreshold) {
+        nav.classList.remove('nav--active');
+        headerCover.classList.add('hidden');
+    }
+    });
+
 </script>

@@ -50,12 +50,16 @@ console.log(dinos, page)
             gap: 2rem;
             width: 100%;
             justify-items: center;
+            animation: fadeIn 1s ease-in-out .2s forwards;
+            opacity: 0;
         }
         .dinos__title {
             color: var(--white);
             font-size: 3rem;
             margin-bottom: 2rem;
             text-align: center;
+            animation: fadeIn 1s ease-in-out forwards;
+            opacity: 0;
             &:after {
                 content: '';
                 display: block;
@@ -64,6 +68,86 @@ console.log(dinos, page)
                 background-color: var(--light-grey);
                 margin: 0.5rem auto;
                 border-radius: 2px;
+            }
+        }
+        .dinos__header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .dinos__searchBar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            width: 100%;
+            background-color: var(--light-grey);
+            border-radius: 5px;
+            max-width: 400px;
+            &:focus-within {
+                    outline: 2px solid var(--green);
+                }
+            i {
+                color: var(--light-black);
+                padding: 1rem;
+                cursor: pointer;
+                transition: color 0.2s ease-in-out;
+                &:hover {
+                    color: var(--green);
+                }
+                
+            }
+            input {
+                width: 100%;
+                padding: .8rem;
+                border: none;
+                border-radius: 0 5px 5px 0;
+                background-color: var(--white);
+                color: var(--light-black);
+                font-size: 1rem;
+                &:focus {
+                    outline: none;
+                }
+                
+            }
+        }
+        .card--hidden {
+            display: none;
+        }
+        .dinos__filters {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            .dinos__filter {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.5rem;
+                width: 100%;
+                max-width: 400px;
+                label {
+                    color: var(--white);
+                    font-size: 1.1rem;
+                }
+                select {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: var(--light-grey);
+                    color: var(--light-black);
+                    font-size: 1rem;
+                    option {
+                        background-color: var(--light-grey);
+                        color: var(--light-black);
+                    }
+                }
             }
         }
         .dinos__flex {
@@ -75,10 +159,22 @@ console.log(dinos, page)
             .dinos__prev, .dinos__next {
                 color: var(--white);
                 font-size: 1.5rem;
+                transition: color 0.2s ease;
+                &:hover {
+                    color: var(--primary-color);
+                }
             }
             .dinos__pages {
                 color: var(--white);
-                font-size: 1.2rem;
+                font-size: 1.1rem;
         }}
+    }
+    @media (width > 480px) {
+        .dinos {
+            .dinos__filters {
+                flex-direction: row;
+                .dinos__filter 
+            }
+        }
     }
 </style>
