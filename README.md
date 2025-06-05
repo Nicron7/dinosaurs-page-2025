@@ -19,9 +19,8 @@ El sitio está compuesto por 5 secciones principales:
 1. **Períodos:** explicación de los tres períodos de la era Mesozoica.
 2. **Dinosaurios:** información sobre distintas especies.
 3. **Curiosidades:** datos interesantes con buscador interactivo.
-4. **Galería o multimedia:** visualización opcional según implementación.
+4. **Index:** visualización opcional según implementación.
 5. **Formulario de contacto:** formulario de contacto para cualquier pregunta y/o aporte informativo.
-
 
 ## 🧑‍💻 Tecnologías utilizadas
 
@@ -35,5 +34,18 @@ El sitio está compuesto por 5 secciones principales:
 
 1. Cloná el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/proyecto-dinosaurios.git
+   git clone git@github.com:Nicron7/dinosaurs-page-2025.git
    cd proyecto-dinosaurios
+
+2. Instalá las dependencias:
+   ```bash
+   pnpm install
+   ```
+
+3. Inicia el entorno de desarrollo:
+   ```bash
+   pnpm dev
+   ```
+
+4. Accede a http://localhost:3000
+
