@@ -2,11 +2,11 @@
 const currentPage = Astro.url.pathname
 
 const navLinks = [
-  { href: "/", text: "Inicio", class: "fa-solid fa-house"},
-  { href: "/periodos", text: "Períodos", class:"fa-solid fa-book" },
-  { href: "/dinosaurios/1", text: "Dinosaurios", class:"fa-solid fa-meteor"}, 
-  { href: "/curiosidades", text: "Curiosidades", class:"fa-solid fa-circle-question"},
-  { href: "/contacto", text: "Contacto", class:"fa-solid fa-envelope"},
+    { href: "/", text: "Inicio", class: "fa-solid fa-house"},
+    { href: "/periodos", text: "Períodos", class:"fa-solid fa-book" },
+    { href: "/dinosaurios/1", text: "Dinosaurios", class:"fa-solid fa-meteor"}, 
+    { href: "/dinosaurFacts", text: "Curiosidades", class:"fa-solid fa-circle-question"},
+    { href: "/contact", text: "Contacto", class:"fa-solid fa-envelope"},
 ];
 
 ---
@@ -59,11 +59,11 @@ const navLinks = [
         </li>
         <li class="nav__item">
             <i class="fa-solid fa-circle-question"></i>
-            <a href="/curiosidades" class="nav__link">Curiosidades</a>
+            <a href="/dinosaurFacts" class="nav__link">Curiosidades</a>
         </li>
         <li class="nav__item">
             <i class="fa-solid fa-envelope"></i>
-            <a href="/contacto" class="nav__link">Contacto</a>
+            <a href="/contact" class="nav__link">Contacto</a>
         </li>
     </ul>
     <div class="nav__theme">
