@@ -190,7 +190,7 @@ const navLinks = [
 
     .nav {
         position: fixed;
-        height: 100svh;
+        height: 100vh;
         top: 0;
         left: 0;
         background-color: var(--light-black);
@@ -428,19 +428,15 @@ const navLinks = [
     });
 
     document.addEventListener('touchend', e => {
-         touchEndX = e.changedTouches[0].screenX;
-
-    const swipeDistance = touchEndX - touchStartX;
-    
-    if (touchStartX < 30 && swipeDistance > swipeThreshold) {
-        nav.classList.add('nav--active');
-        headerCover.classList.remove('hidden');
-    }
-
-    if (nav.classList.contains('nav--active') && swipeDistance < -swipeThreshold) {
-        nav.classList.remove('nav--active');
-        headerCover.classList.add('hidden');
-    }
+        touchEndX = e.changedTouches[0].screenX;
+        const swipeDistance = touchEndX - touchStartX;
+        if (touchStartX < 30 && swipeDistance > swipeThreshold) {
+            nav.classList.add('nav--active');
+            headerCover.classList.add('header__cover--active');
+        }
+        if (nav.classList.contains('nav--active') && swipeDistance < -swipeThreshold) {
+            closeNav();
+        }
     });
 
 </script>
