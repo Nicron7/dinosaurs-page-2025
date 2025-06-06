@@ -294,8 +294,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 </style>
 
 <script>
-    const input = document.getElementById("searchInput");
-    const items = document.querySelectorAll(".curiosity__item");
+    const input = document.querySelector<HTMLInputElement>("#searchInput")!;
+    const items = document.querySelectorAll<HTMLElement>(".curiosity__item")!;
 
     input.addEventListener("input", () => {
         const query = input.value.toLowerCase();
