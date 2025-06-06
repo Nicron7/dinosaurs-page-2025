@@ -400,8 +400,11 @@ const navLinks = [
     const headerCover = document.querySelector<HTMLElement>('.header__cover')!;
     const navClose = document.querySelector<HTMLElement>('.nav__close')!;
     let touchStartX = 0;
+    let touchStartY = 0;
     let touchEndX = 0;
-    const swipeThreshold = 50;
+    let touchEndY = 0;
+    const swipeThreshold = 40; 
+    const edgeThreshold = 60; 
 
     hamburger.addEventListener('click', () => {
         nav.classList.toggle('nav--active');
@@ -423,19 +426,27 @@ const navLinks = [
         headerCover.classList.remove('header__cover--active');
     }
 
+
+
     document.addEventListener('touchstart', e => {
         touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
     });
 
     document.addEventListener('touchend', e => {
         touchEndX = e.changedTouches[0].screenX;
-        const swipeDistance = touchEndX - touchStartX;
-        if (touchStartX < 30 && swipeDistance > swipeThreshold) {
+        touchEndY = e.changedTouches[0].screenY;
+
+        const deltaX = touchEndX - touchStartX;
+        const deltaY = Math.abs(touchEndY - touchStartY);
+
+        if (touchStartX < edgeThreshold && deltaX > swipeThreshold && deltaY < 50) {
             nav.classList.add('nav--active');
             hamburger.classList.add('active');
             headerCover.classList.add('header__cover--active');
         }
-        if (nav.classList.contains('nav--active') && swipeDistance < -swipeThreshold) {
+
+        if (nav.classList.contains('nav--active') && deltaX < -swipeThreshold && deltaY < 50) {
             closeNav();
         }
     });
