@@ -2,11 +2,11 @@
 const currentPage = Astro.url.pathname
 
 const navLinks = [
-    { href: "/", text: "Inicio", class: "fa-solid fa-house"},
-    { href: "/periodos", text: "Períodos", class:"fa-solid fa-book" },
-    { href: "/dinosaurios/1", text: "Dinosaurios", class:"fa-solid fa-meteor"}, 
-    { href: "/curiosidades", text: "Curiosidades", class:"fa-solid fa-circle-question"},
-    { href: "/contacto", text: "Contacto", class:"fa-solid fa-envelope"},
+    { href: "/", match: "/", text: "Inicio", class: "fa-solid fa-house"},
+    { href: "/periodos", match: "/periodos", text: "Períodos", class:"fa-solid fa-book" },
+    { href: "/dinosaurios/1", match: "/dinosaurios", text: "Dinosaurios", class:"fa-solid fa-meteor"}, 
+    { href: "/curiosidades", match: "/curiosidades", text: "Curiosidades", class:"fa-solid fa-circle-question"},
+    { href: "/contacto", match: "/contacto", text: "Contacto", class:"fa-solid fa-envelope"},
 ];
 
 ---
@@ -24,12 +24,19 @@ const navLinks = [
         </div>
         <nav class="header__nav">
             <ul class="header__nav__list">
-                {navLinks.map((link) => (
-                    <a href={link.href} class="header__nav__item">
-                        <i class={ currentPage === link.href ? link.class + " header__nav__icon--active" : link.class}></i>
-                        <li  class={currentPage === link.href ? "header__nav__link header__nav__link--active" : "header__nav__link"}>{link.text}</li>
-                    </a>
-                ))}
+                {navLinks.map(link => {
+                    const isActive = link.href === "/"
+                        ? (currentPage === "/")
+                        : (currentPage.startsWith(link.match));
+                    return (
+                        <li class="header__nav__item">
+                            <a href={link.href} class={`header__nav__link ${isActive ? "header__nav__link--active" : ""}`}>
+                                <i class={`${link.class} ${isActive ? "header__nav__icon--active" : ""}`}></i>
+                                {link.text}
+                            </a>
+                        </li>
+                    );
+                })}
             </ul>
         </nav>
     </div>
@@ -143,6 +150,9 @@ const navLinks = [
                             font-weight: 500;
                             font-size: 1rem;
                             transition: color .2s ease-in-out;
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
                         }
                         .header__nav__link--active {
                             color: var(--primary-color);
