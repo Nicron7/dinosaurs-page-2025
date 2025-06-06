@@ -64,7 +64,6 @@ import MainLayout from "../layouts/MainLayout.astro";
                         ></div>
                         <p id="formMessage" class="contact__form-message"></p>
                         <button class="contact__submit-button" type="submit">Enviar</button>
-                        <!-- <p id="formMessage" class="contact__form-message"></p>  -->
                     </form>
                 </div>
             </div>
@@ -73,6 +72,9 @@ import MainLayout from "../layouts/MainLayout.astro";
             </div>
         </div>
     </section>
+    <div id="successMessage" class="contact__success">
+        <p  class="contact__success-message"><i class="fa-solid fa-circle-check"></i>Mensaje enviado con éxito!</p>
+    </div>
 </MainLayout>
 
 <style>
@@ -80,7 +82,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         margin: 0 auto;
          padding: 0 1rem 3rem 1rem;
         padding-top: calc(77.92px + 2rem);
-        background-color: var(--primary-hover);
+        background-color: var(--black);
     }
 
     .contact__container {
@@ -142,6 +144,40 @@ import MainLayout from "../layouts/MainLayout.astro";
         object-fit: cover;
         display: block;
     }
+    .contact__success {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-30%);
+        padding: 2.5rem 2rem;
+        margin-top: calc(77.92px + .5rem);
+        position: fixed;
+        background-color: var(--green);
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        width: 90%;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .contact__success-message {
+            color: var(--white);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            i {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .contact__success--show {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+
 
     .contact__image-container {
         width: 100%;
@@ -169,7 +205,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         left: 15px;
         font-size: 1rem;
         top: 50%;
-        color: var(--secondary-color);
+        color: var(--primary-color);
         transform: translateY(-30%);
     }
 
@@ -178,7 +214,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         left: 15px;
         font-size: 1rem;
         top: 20%;
-        color: var(--secondary-color);
+        color: var(--primary-color);
         transform: translateY(-30%);
     }
 
@@ -194,13 +230,13 @@ import MainLayout from "../layouts/MainLayout.astro";
         font-size: 0.95rem;
         background-color: var(--white);
         margin-top: 0.5rem;
-        color: var(--black);
+        color: var(--light-black);
         caret-color: var(--primary-color);
     }
 
     .contact__form input::placeholder,
     .contact__form textarea::placeholder {
-        color: var(--secondary-hover);
+        color: var(--dark-grey);
         opacity: 0.7;
         font-style: italic;
     }
@@ -218,27 +254,30 @@ import MainLayout from "../layouts/MainLayout.astro";
     }
 
     .contact__submit-button {
-        background-color: var(--primary-color);
+        background-color: var(--primary-hover);
         color: var(--white);
         padding: 1rem 7.5rem;
-        border: 4px outset var(--primary-color-glow);
-        border-radius: 1rem;
+        border-radius: .5rem;
+        border: none;
         cursor: pointer;
         font-weight: 600;
         font-size: 1rem;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
         margin-top: 0.5rem;
+        box-shadow: 0 6px 0px var(--primary-dark);
     }
 
     .contact__submit-button:hover {
-        background-color: var(--primary-hover);
+        background-color: var(--primary-dark);
+        transform: translateY(6px);
+        box-shadow: 0 0px 0px var(--primary-dark);
     }
 
     .contact__form-message {
-        margin-top: 1rem;
         font-weight: bold;
         font-size: 0.95rem;
         display: none;
+        margin-top: .5rem;
     }
 
     .contact__loader {
@@ -248,7 +287,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         border-radius: 50%;
         border-top-color: var(--primary-color);
         animation: spin 1s ease-in-out infinite;
-        margin: 1rem auto;
+        margin: .5rem auto;
     }
 
     @keyframes spin {
@@ -270,6 +309,9 @@ import MainLayout from "../layouts/MainLayout.astro";
         .contact__main {
             width: 50%;
         }
+        .contact__success {
+            width: unset;
+        }
     }
 </style>
 
@@ -277,6 +319,7 @@ import MainLayout from "../layouts/MainLayout.astro";
     const form = document.getElementById("contactForm");
     const message = document.getElementById("formMessage");
     const loadingImage = document.getElementById("loadingImage");
+    const successMessage = document.getElementById("successMessage");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -300,14 +343,14 @@ import MainLayout from "../layouts/MainLayout.astro";
         }
 
         loadingImage.style.display = "block";
-        message.style.display = "block";
-        message.textContent = "";
         
         setTimeout(() => {
             loadingImage.style.display = "none";
-            message.textContent = "¡Mensaje enviado con éxito!";
-            message.style.color = "var(--green)";
+            successMessage.classList.add("contact__success--show");
             form.reset();
+            setTimeout(() => {
+                successMessage.classList.remove("contact__success--show");
+            }, 3000);
         }, 2000);
         
     });
