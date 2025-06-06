@@ -107,7 +107,7 @@
 				display: flex;
 				gap: 2rem;
 				align-items: center;
-				transition: all .7s ease;
+				transition: all .3s ease;
 				will-change: transform;
 			}
 			.extinction__grid__cont {
@@ -141,7 +141,6 @@
 				background-color: rgba(0, 0, 0, 0.4);
 				border-radius: 50%;
 				cursor: pointer;
-				display: flex;
 				align-items: center;
 				justify-content: center;
 				color: var(--white);
@@ -150,6 +149,7 @@
 				position: absolute;
 				top: 50%;
 				transform: translateY(-50%);
+				display: none;
 				li {
 					color: var(--white);
 				}
@@ -306,6 +306,12 @@
 	@media (width > 768px) {
 		.extinction {
 			.extinction__cont {
+				.extinction__grid {
+					transition: all .7s ease;
+				}
+				.extinction__grid__prev, .extinction__grid__next {
+					display: flex;
+				}
 				.extinction__grid__item {
 					flex-direction: row;
 					max-width: 300px;
@@ -317,6 +323,7 @@
 					.extinction__grid__text {
 						padding: 2rem;
 					}
+					
 					.extinction__grid__img {
 						height: 100%;
 						border-radius: 0 1rem 1rem 0;

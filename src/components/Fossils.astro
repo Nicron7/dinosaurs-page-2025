@@ -44,8 +44,6 @@
                     <span class="fossils__grid__dot"></span>
                 </div>
             </div>
-            <div class="fossils__grid__prev"><i class="fa-solid fa-angle-left"></i></div>
-            <div class="fossils__grid__next"><i class="fa-solid fa-angle-right"></i></div>
         </div>
         <footer class="fossils__footer">
             <article class="fossils__footer__cont">
@@ -162,7 +160,7 @@
             display: flex;
             gap: 2rem;
             align-items: center;
-            transition: transform .7s ease;
+            transition: transform .3s ease;
             will-change: transform;
         }
         .fossils__grid__item {
@@ -210,32 +208,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            .fossils__grid__prev, .fossils__grid__next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background-color: rgba(255, 255, 255, 0.5);
-                color: var(--light-black);
-                border-radius: 50%;
-                width: 2.8rem;
-                font-size: 1.5rem;
-                height: 2.8rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                z-index: 10;
-                transition: background-color 0.3s ease;
-                &:hover {
-                    background-color: var(--white);
-                }
-            }
-            .fossils__grid__next {
-                right: -1rem;
-            }
-            .fossils__grid__prev {
-                left: -1rem;
-            }
         }
         .fossils__grid__dots {
             display: flex;
@@ -396,11 +368,6 @@
             .fossils__grid__dots {
                 display: none;
             }
-            .fossils__grid__main {
-                .fossils__grid__prev, .fossils__grid__next {
-                    display: none;
-                }
-            }
             .fossils__footer {
                 max-width: 1000px;
                 .fossils__footer__cont {
@@ -451,8 +418,6 @@
 
 </style>
 <script>
-	const prevBtn = document.querySelector<HTMLElement>('.fossils__grid__prev')!;
-	const nextBtn = document.querySelector<HTMLElement>('.fossils__grid__next')!;
 	const grid = document.querySelector<HTMLElement>('.fossils__grid')!;
 	const dots = document.querySelectorAll<HTMLElement>('.fossils__grid__dot');
 	const items: HTMLElement[] = Array.from(grid.children) as HTMLElement[];
@@ -484,30 +449,6 @@
 	window.addEventListener('resize', () => {
 		calculateItemWidth();
 		updateGrid(); 
-	});
-
-	prevBtn.addEventListener('click', () => {
-		if (currentIndex > 0) {
-			currentIndex--;
-			updateGrid();
-			updateDots();
-		} else {
-			currentIndex = totalItems - 1;
-			updateGrid();
-			updateDots();
-		}
-	});
-
-	nextBtn.addEventListener('click', () => {
-		if (currentIndex < totalItems - 1) {
-			currentIndex++;
-			updateGrid();
-			updateDots();
-		} else {
-			currentIndex = 0; 
-			updateGrid();
-			updateDots();
-		}
 	});
 
 	dots.forEach((dot, index) => {
