@@ -148,14 +148,14 @@ import MainLayout from "../layouts/MainLayout.astro";
         top: 0;
         left: 50%;
         transform: translateX(-50%) translateY(-30%);
-        padding: 2.5rem 2rem;
+        padding: 2rem;
         margin-top: calc(77.92px + .5rem);
         position: fixed;
         background-color: var(--green);
         border-radius: 1rem;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        pointer-events: none;
         opacity: 0;
-        width: 90%;
         transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
         display: flex;
         flex-direction: column;
@@ -163,12 +163,13 @@ import MainLayout from "../layouts/MainLayout.astro";
         justify-content: center;
         .contact__success-message {
             color: var(--white);
-            font-size: 1.1rem;
+            font-size: .9rem;
             display: flex;
             align-items: center;
+            text-wrap: nowrap;
             gap: .5rem;
             i {
-                font-size: 1.4rem;
+                font-size: 1rem;
             }
         }
     }
@@ -298,6 +299,16 @@ import MainLayout from "../layouts/MainLayout.astro";
             transform: rotate(360deg);
         }
     }
+    @media (width > 480px) {
+        .contact__success {
+            .contact__success-message {
+                font-size: 1rem;
+                i {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
 
     @media (width > 768px) {
         .contact__image-container {
@@ -343,7 +354,8 @@ import MainLayout from "../layouts/MainLayout.astro";
         }
 
         loadingImage.style.display = "block";
-        
+        message.style.display = "none";
+
         setTimeout(() => {
             loadingImage.style.display = "none";
             successMessage.classList.add("contact__success--show");
