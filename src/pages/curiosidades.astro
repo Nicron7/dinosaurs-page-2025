@@ -142,10 +142,10 @@ import MainLayout from "../layouts/MainLayout.astro";
                 <ul class="footer__list">
                     <li>
                         <a href="#curiosityList"
-                            >🔍 Ver todas las curiosidades</a>
+                            ><i class="fa-solid fa-circle-question"></i>Ver todas las curiosidades</a>
                     </li>
-                    <li><a href="#searchInput">🧠 Buscar una curiosidad</a></li>
-                    <li><a href="#">⬆️ Volver arriba</a></li>
+                    <li><a href="#searchInput"><i class="fa-solid fa-magnifying-glass"></i>Buscar una curiosidad</a></li>
+                    <li><a href="#"><i class="fa-solid fa-arrow-up"></i>Volver arriba</a></li>
                 </ul>
             </footer>
         </div>
@@ -154,9 +154,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <style>
     .curiositiesSection {
-        background:
-            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url("/dinos-curiosidades.jpg") no-repeat center center / cover;
+        background-color: var(--black);
         padding-top: calc(77.92px + 2rem);
         padding-bottom: 3rem;
     }
@@ -226,10 +224,10 @@ import MainLayout from "../layouts/MainLayout.astro";
         color: var(--black);
         font-size: 1.1rem;
         line-height: 1.6;
-        box-shadow: 0 2px 6px rgba(253, 253, 253, 0.689);
         transition:
             background-color 0.3s ease,
-            transform 0.2s ease;
+            transform 0.2s ease,
+            box-shadow 0.3s ease;
     }
 
     .curiosity__item::before {
@@ -248,6 +246,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         background-color: var(--primary-hover);
         color: var(--white);
         transform: translateY(-2px);
+        box-shadow: 0 0px 10px var(--primary-color);
     }
 
     .curiosities__footer {
@@ -258,6 +257,9 @@ import MainLayout from "../layouts/MainLayout.astro";
         text-align: center;
         border-radius: 1rem;
         color: var(--black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer__title {
@@ -277,19 +279,29 @@ import MainLayout from "../layouts/MainLayout.astro";
         padding: 0;
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     .footer__list a {
         color: var(--white);
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
         font-weight: 500;
-        transition: color 0.3s ease;
+        width: fit-content;
+        transition: all 0.3s ease;
+        background-color: var(--primary-color);
+        border-radius: 0.5rem;
+        padding: .5rem 1rem;
+        margin: 0 auto;
+        box-shadow: 0 4px 0px var(--primary-dark);
     }
 
     .footer__list a:hover {
-        color: var(--primary-color);
-        text-decoration: underline;
+        transform: translateY(4px);
+        box-shadow: 0 0px 0px var(--primary-dark);
     }
 </style>
 
