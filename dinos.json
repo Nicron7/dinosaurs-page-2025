@@ -1,759 +1,842 @@
 [
-    {
-      "nombre": "Tyrannosaurus Rex",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "12-13 metros",
-      "peso_aproximado": "6-9 toneladas",
-      "descripcion": "Uno de los carnívoros terrestres más grandes, conocido por su cabeza masiva y pequeños brazos de dos dedos.",
-      "imagen_url": "/images/tyrannosaurus_rex.webp"
-    },
-    {
-      "nombre": "Triceratops",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "8-9 metros",
-      "peso_aproximado": "6-12 toneladas",
-      "descripcion": "Famoso por su gran gola ósea y tres cuernos faciales, probablemente usados para defensa y exhibición.",
-      "imagen_url": "/images/triceratops.webp"
-    },
-    {
-      "nombre": "Velociraptor",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "1.8-2 metros",
-      "peso_aproximado": "15-20 kilogramos",
-      "descripcion": "Pequeño y ágil depredador con una distintiva garra retráctil en forma de hoz en cada pie.",
-      "imagen_url": "/images/velociraptor.webp"
-    },
-    {
-      "nombre": "Stegosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "9 metros",
-      "peso_aproximado": "5-7 toneladas",
-      "descripcion": "Reconocible por sus distintivas placas óseas a lo largo del lomo y cuatro púas en la cola (thagomizer).",
-      "imagen_url": "/images/stegosaurus.webp"
-    },
-    {
-      "nombre": "Brachiosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "23-27 metros",
-      "peso_aproximado": "30-60 toneladas",
-      "descripcion": "Gigantesco saurópodo con patas delanteras más largas que las traseras y un cuello extremadamente largo, adaptado para alimentarse de árboles altos.",
-      "imagen_url": "/images/brachiosaurus.webp"
-    },
-    {
-      "nombre": "Allosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "8.5-12 metros",
-      "peso_aproximado": "2-2.5 toneladas",
-      "descripcion": "Gran depredador con manos de tres dedos y crestas óseas sobre los ojos.",
-      "imagen_url": "/images/allosaurus.webp"
-    },
-    {
-      "nombre": "Apatosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "21-23 metros",
-      "peso_aproximado": "18-35 toneladas",
-      "descripcion": "Saurópodo masivo, anteriormente conocido como Brontosaurus, con un cuello largo y una cola en forma de látigo.",
-      "imagen_url": "/images/apatosaurus.webp"
-    },
-    {
-      "nombre": "Diplodocus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "24-33 metros",
-      "peso_aproximado": "10-16 toneladas",
-      "descripcion": "Uno de los dinosaurios más largos conocidos, caracterizado por su cuello y cola extremadamente largos.",
-      "imagen_url": "/images/diplodocus.webp"
-    },
-    {
-      "nombre": "Ankylosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "6-8 metros",
-      "peso_aproximado": "6-8 toneladas",
-      "descripcion": "Dinosaurio acorazado con placas óseas fusionadas y una pesada maza en el extremo de su cola.",
-      "imagen_url": "/images/ankylosaurus.webp"
-    },
-    {
-      "nombre": "Spinosaurus",
-      "tipo": "Carnívoro/Piscívoro",
-      "periodo": "Cretácico Medio",
-      "longitud_aproximada": "12-18 metros",
-      "peso_aproximado": "7-20 toneladas",
-      "descripcion": "Depredador semiacuático con una distintiva vela dorsal alta, posiblemente el carnívoro más grande conocido.",
-      "imagen_url": "/images/spinosaurus.webp"
-    },
-    {
-      "nombre": "Parasaurolophus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "9-10 metros",
-      "peso_aproximado": "2.5-4 toneladas",
-      "descripcion": "Hadrosaurio (pico de pato) conocido por su cresta craneal tubular y hueca, que pudo haber sido usada para vocalizar.",
-      "imagen_url": "/images/parasaurolophus.webp"
-    },
-    {
-      "nombre": "Carnotaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "7.5-9 metros",
-      "peso_aproximado": "1.3-2 toneladas",
-      "descripcion": "Depredador bípedo con distintivos cuernos sobre los ojos y brazos extremadamente pequeños.",
-      "imagen_url": "/images/carnotaurus.webp"
-    },
-    {
-      "nombre": "Iguanodon",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "10 metros",
-      "peso_aproximado": "3-4 toneladas",
-      "descripcion": "Uno de los primeros dinosaurios descubiertos, caracterizado por una púa cónica en el pulgar.",
-      "imagen_url": "/images/iguanodon.webp"
-    },
-    {
-      "nombre": "Pachycephalosaurus",
-      "tipo": "Herbívoro/Omnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "4.5 metros",
-      "peso_aproximado": "450 kilogramos - 2 toneladas",
-      "descripcion": "Conocido por su cráneo extremadamente grueso y abovedado, probablemente usado en combates intraespecíficos.",
-      "imagen_url": "/images/pachycephalosaurus.webp"
-    },
-    {
-      "nombre": "Dilophosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Jurásico Inferior",
-      "longitud_aproximada": "6-7 metros",
-      "peso_aproximado": "400 kilogramos",
-      "descripcion": "Depredador con dos crestas delgadas y redondeadas en su cráneo.",
-      "imagen_url": "/images/dilophosaurus.webp"
-    },
-    {
-      "nombre": "Compsognathus",
-      "tipo": "Carnívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "0.65-1.4 metros",
-      "peso_aproximado": "0.8 - 3.5 kilogramos",
-      "descripcion": "Pequeño dinosaurio terópodo del tamaño de un pollo, uno de los dinosaurios más pequeños conocidos.",
-      "imagen_url": "/images/compsognathus.webp"
-    },
-    {
-      "nombre": "Gallimimus",
-      "tipo": "Omnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "6-8 metros",
-      "peso_aproximado": "400-450 kilogramos",
-      "descripcion": "Dinosaurio parecido a un avestruz, con cuello largo, patas largas y probablemente muy veloz.",
-      "imagen_url": "/images/gallimimus.webp"
-    },
-    {
-      "nombre": "Argentinosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "30-39.7 metros",
-      "peso_aproximado": "70-100 toneladas",
-      "descripcion": "Uno de los animales terrestres más grandes de todos los tiempos, un titanosaurio saurópodo masivo.",
-      "imagen_url": "/images/argentinosaurus.webp"
-    },
-    {
-      "nombre": "Giganotosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "12-13 metros",
-      "peso_aproximado": "6-8 toneladas",
-      "descripcion": "Uno de los carnívoros terrestres más grandes, rivalizando en tamaño con el Tyrannosaurus.",
-      "imagen_url": "/images/giganotosaurus.webp"
-    },
-    {
-      "nombre": "Maiasaura",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "9 metros",
-      "peso_aproximado": "2-3 toneladas",
-      "descripcion": "Conocido como la \"buena lagarta madre\" por la evidencia de cuidado parental en sus nidos.",
-      "imagen_url": "/images/maiasaura.webp"
-    },
-    {
-      "nombre": "Protoceratops",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "1.8-2.5 metros",
-      "peso_aproximado": "180-400 kilogramos",
-      "descripcion": "Pequeño dinosaurio ceratopsio con una gola ósea en el cuello pero sin cuernos faciales prominentes.",
-      "imagen_url": "/images/protoceratops.webp"
-    },
-    {
-      "nombre": "Edmontosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "9-13 metros",
-      "peso_aproximado": "4-7 toneladas",
-      "descripcion": "Gran hadrosaurio (pico de pato) que vivía en grandes manadas.",
-      "imagen_url": "/images/edmontosaurus.webp"
-    },
-    {
-      "nombre": "Baryonyx",
-      "tipo": "Carnívoro/Piscívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "7.5-10 metros",
-      "peso_aproximado": "1.2-1.9 toneladas",
-      "descripcion": "Depredador con una gran garra en el primer dedo de la mano y un hocico largo similar al de un cocodrilo, adaptado para pescar.",
-      "imagen_url": "/images/baryonyx.webp"
-    },
-    {
-      "nombre": "Therizinosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "9-10 metros",
-      "peso_aproximado": "3-5 toneladas",
-      "descripcion": "Extraño dinosaurio con garras enormes en sus manos (hasta 1 metro de largo), probablemente usadas para alcanzar vegetación.",
-      "imagen_url": "/images/therizinosaurus.webp"
-    },
-    {
-      "nombre": "Oviraptor",
-      "tipo": "Omnívoro/Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "1.5-2 metros",
-      "peso_aproximado": "25-35 kilogramos",
-      "descripcion": "Pequeño dinosaurio con una cresta distintiva y un pico sin dientes, a menudo encontrado cerca de nidos.",
-      "imagen_url": "/images/oviraptor.webp"
-    },
-    {
-      "nombre": "Plateosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Triásico Superior",
-      "longitud_aproximada": "5-10 metros",
-      "peso_aproximado": "600 kilogramos - 4 toneladas",
-      "descripcion": "Uno de los primeros grandes dinosaurios herbívoros, un prosaurópodo.",
-      "imagen_url": "/images/plateosaurus.webp"
-    },
-    {
-      "nombre": "Deinonychus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "3-3.4 metros",
-      "peso_aproximado": "70-100 kilogramos",
-      "descripcion": "Depredador dromeosáurido con una gran garra en forma de hoz en el segundo dedo del pie, inspiró al Velociraptor de Jurassic Park.",
-      "imagen_url": "/images/deinonychus.webp"
-    },
-    {
-      "nombre": "Coelophysis",
-      "tipo": "Carnívoro",
-      "periodo": "Triásico Superior",
-      "longitud_aproximada": "2-3 metros",
-      "peso_aproximado": "15-25 kilogramos",
-      "descripcion": "Uno de los primeros dinosaurios terópodos, ligero y ágil, a menudo encontrado en grandes agrupaciones fósiles.",
-      "imagen_url": "/images/coelophysis.webp"
-    },
-    {
-      "nombre": "Centrosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "5-6 metros",
-      "peso_aproximado": "2-3 toneladas",
-      "descripcion": "Dinosaurio ceratopsio con un único cuerno nasal grande y una gola con pequeños cuernos.",
-      "imagen_url": "/images/centrosaurus.webp"
-    },
-    {
-      "nombre": "Mamenchisaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "22-35 metros",
-      "peso_aproximado": "20-30 toneladas",
-      "descripcion": "Saurópodo conocido por tener uno de los cuellos más largos en relación con su cuerpo, hasta 15 metros.",
-      "imagen_url": "/images/mamenchisaurus.webp"
-    },
-    {
-      "nombre": "Albertosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "8-9 metros",
-      "peso_aproximado": "1.5-2.5 toneladas",
-      "descripcion": "Gran tiranosáurido, pariente cercano pero más pequeño y ligero que el T. Rex.",
-      "imagen_url": "/images/albertosaurus.webp"
-    },
-    {
-      "nombre": "Euoplocephalus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "5-6 metros",
-      "peso_aproximado": "2-2.5 toneladas",
-      "descripcion": "Anquilosáurido fuertemente acorazado con párpados óseos y una maza en la cola.",
-      "imagen_url": "/images/euoplocephalus.webp"
-    },
-    {
-      "nombre": "Corythosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "8-9 metros",
-      "peso_aproximado": "3-4 toneladas",
-      "descripcion": "Hadrosaurio con una distintiva cresta semicircular en la cabeza, similar a un casco corintio.",
-      "imagen_url": "/images/corythosaurus.webp"
-    },
-    {
-      "nombre": "Struthiomimus",
-      "tipo": "Omnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "4.3 metros",
-      "peso_aproximado": "150-200 kilogramos",
-      "descripcion": "Dinosaurio ornitomímido (imitador de aves) con apariencia de avestruz, probablemente rápido y ágil.",
-      "imagen_url": "/images/struthiomimus.webp"
-    },
-    {
-      "nombre": "Pterodactylus",
-      "tipo": "Carnívoro/Piscívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "Envergadura de 1 metro (no es un dinosaurio, sino un pterosaurio)",
-      "peso_aproximado": "1-4 kilogramos (estimado para pterosaurios de tamaño similar)",
-      "descripcion": "Pequeño reptil volador (pterosaurio) con una cresta en la cabeza y dientes pequeños. A menudo confundido con un dinosaurio.",
-      "imagen_url": "/images/pterodactylus.webp"
-    },
-    {
-      "nombre": "Archaeopteryx",
-      "tipo": "Carnívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "0.5 metros (similar a un cuervo)",
-      "peso_aproximado": "0.8-1 kilogramo",
-      "descripcion": "Considerado un eslabón entre los dinosaurios no avianos y las aves modernas, poseía plumas y dientes.",
-      "imagen_url": "/images/archaeopteryx.webp"
-    },
-    {
-      "nombre": "Saltasaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "12-13 metros",
-      "peso_aproximado": "7-8 toneladas",
-      "descripcion": "Titanosaurio saurópodo notable por tener pequeñas placas óseas (osteodermos) incrustadas en su piel para protección.",
-      "imagen_url": "/images/saltasaurus.webp"
-    },
-    {
-      "nombre": "Utahraptor",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "5-7 metros",
-      "peso_aproximado": "200-500 kilogramos",
-      "descripcion": "Uno de los dromeosáuridos más grandes, con una garra en forma de hoz de hasta 24 cm.",
-      "imagen_url": "/images/utahraptor.webp"
-    },
-    {
-      "nombre": "Ceratosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "5-7 metros",
-      "peso_aproximado": "0.5-1 tonelada",
-      "descripcion": "Depredador con un distintivo cuerno nasal grande y un par de crestas más pequeñas sobre los ojos.",
-      "imagen_url": "/images/ceratosaurus.webp"
-    },
-    {
-      "nombre": "Herrerasaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Triásico Superior",
-      "longitud_aproximada": "3-6 metros",
-      "peso_aproximado": "200-350 kilogramos",
-      "descripcion": "Uno de los dinosaurios más antiguos conocidos, un depredador basal con una estructura corporal primitiva.",
-      "imagen_url": "/images/herrerasaurus.webp"
-    },
-    {
-      "nombre": "Microraptor",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "0.4-0.8 metros",
-      "peso_aproximado": "Aproximadamente 1 kilogramo",
-      "descripcion": "Pequeño dinosaurio dromeosáurido con plumas en las cuatro extremidades, lo que sugiere capacidad de planeo o vuelo.",
-      "imagen_url": "/images/microraptor.webp"
-    },
-    {
-      "nombre": "Shantungosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "14-16 metros",
-      "peso_aproximado": "10-16 toneladas",
-      "descripcion": "Uno de los hadrosaurios (picos de pato) más grandes conocidos, con miles de dientes para triturar plantas.",
-      "imagen_url": "/images/shantungosaurus.webp"
-    },
-    {
-      "nombre": "Abelisaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "7-9 metros",
-      "peso_aproximado": "1.5-2.5 toneladas",
-      "descripcion": "Depredador sudamericano conocido por su cráneo corto y robusto con grandes aberturas.",
-      "imagen_url": "/images/abelisaurus.webp"
-    },
-    {
-      "nombre": "Achelousaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "6 metros",
-      "peso_aproximado": "2-3 toneladas",
-      "descripcion": "Ceratópsido con protuberancias óseas sobre los ojos y en el hocico en lugar de cuernos definidos.",
-      "imagen_url": "/images/achelousaurus.webp"
-    },
-    {
-      "nombre": "Acrocanthosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "11-12 metros",
-      "peso_aproximado": "5-6 toneladas",
-      "descripcion": "Gran terópodo con espinas neurales altas a lo largo de su espalda, formando una especie de vela baja.",
-      "imagen_url": "/images/acrocanthosaurus.webp"
-    },
-    {
-      "nombre": "Aerosteon",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "9 metros",
-      "peso_aproximado": "2 toneladas",
-      "descripcion": "Terópodo con evidencia de un sistema respiratorio similar al de las aves, con sacos aéreos.",
-      "imagen_url": "/images/aerosteon.webp"
-    },
-    {
-      "nombre": "Afrovenator",
-      "tipo": "Carnívoro",
-      "periodo": "Jurásico Medio",
-      "longitud_aproximada": "7-8 metros",
-      "peso_aproximado": "1-1.5 toneladas",
-      "descripcion": "Terópodo megalosáurido descubierto en África, con un cuerpo relativamente ligero y brazos largos.",
-      "imagen_url": "/images/afrovenator.webp"
-    },
-    {
-      "nombre": "Agilisaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Medio",
-      "longitud_aproximada": "1.2-1.7 metros",
-      "peso_aproximado": "10-40 kilogramos",
-      "descripcion": "Pequeño y ágil dinosaurio ornitisquio, probablemente un corredor rápido.",
-      "imagen_url": "/images/agilisaurus.webp"
-    },
-    {
-      "nombre": "Alamosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "20-30 metros",
-      "peso_aproximado": "30-70 toneladas",
-      "descripcion": "Gran titanosaurio saurópodo, uno de los últimos saurópodos de Norteamérica.",
-      "imagen_url": "/images/alamosaurus.webp"
-    },
-    {
-      "nombre": "Alioramus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "5-6 metros",
-      "peso_aproximado": "300-700 kilogramos",
-      "descripcion": "Tiranosáurido asiático con un hocico largo y una hilera de pequeñas crestas nasales.",
-      "imagen_url": "/images/alioramus.webp"
-    },
-    {
-      "nombre": "Amargasaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "9-10 metros",
-      "peso_aproximado": "2-3 toneladas",
-      "descripcion": "Saurópodo dicreosáurido con dos hileras paralelas de espinas neurales altas y bifurcadas a lo largo de su cuello y espalda.",
-      "imagen_url": "/images/amargasaurus.webp"
-    },
-    {
-      "nombre": "Anzu",
-      "tipo": "Omnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "3-3.5 metros",
-      "peso_aproximado": "200-300 kilogramos",
-      "descripcion": "Oviraptorosaurio norteamericano apodado \"pollo del infierno\" por su extraña apariencia con cresta y plumas.",
-      "imagen_url": "/images/anzu.webp"
-    },
-    {
-      "nombre": "Arrhinoceratops",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "4.5-6 metros",
-      "peso_aproximado": "1.5-2.5 toneladas",
-      "descripcion": "Ceratópsido con una gola ancha y dos cuernos largos sobre los ojos, pero un cuerno nasal pequeño o ausente.",
-      "imagen_url": "/images/arrhinoceratops.webp"
-    },
-    {
-      "nombre": "Aucasaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "5.5-6 metros",
-      "peso_aproximado": "700 kilogramos - 1 tonelada",
-      "descripcion": "Abelisáurido con brazos aún más reducidos que el Carnotaurus, casi vestigiales.",
-      "imagen_url": "/images/aucasaurus.webp"
-    },
-    {
-      "nombre": "Austroraptor",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "5-6 metros",
-      "peso_aproximado": "300-400 kilogramos",
-      "descripcion": "Gran dromeosáurido del hemisferio sur con un hocico largo y bajo, y brazos relativamente cortos.",
-      "imagen_url": "/images/austroraptor.webp"
-    },
-    {
-      "nombre": "Avimimus",
-      "tipo": "Omnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "1.5 metros",
-      "peso_aproximado": "15-20 kilogramos",
-      "descripcion": "Pequeño dinosaurio parecido a un ave, con características que sugieren que tenía plumas.",
-      "imagen_url": "/images/avimimus.webp"
-    },
-    {
-      "nombre": "Camarasaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "15-23 metros",
-      "peso_aproximado": "15-20 toneladas",
-      "descripcion": "Saurópodo común en Norteamérica, con un cráneo corto y cuadrado y grandes aberturas nasales.",
-      "imagen_url": "/images/camarasaurus.webp"
-    },
-    {
-      "nombre": "Carcharodontosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "12-13.5 metros",
-      "peso_aproximado": "6-15 toneladas",
-      "descripcion": "Gigantesco carnívoro africano con dientes largos y serrados, similares a los de un tiburón.",
-      "imagen_url": "/images/carcharodontosaurus.webp"
-    },
-    {
-      "nombre": "Caudipteryx",
-      "tipo": "Omnívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "0.7-1 metro",
-      "peso_aproximado": "5-7 kilogramos",
-      "descripcion": "Pequeño dinosaurio con plumas simétricas en brazos y cola, probablemente no volador.",
-      "imagen_url": "/images/caudipteryx.webp"
-    },
-    {
-      "nombre": "Chasmosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "4.3-5 metros",
-      "peso_aproximado": "1.5-2.5 toneladas",
-      "descripcion": "Ceratópsido con una gola muy larga y rectangular, a menudo con grandes fenestras (aberturas).",
-      "imagen_url": "/images/chasmosaurus.webp"
-    },
-    {
-      "nombre": "Citipati",
-      "tipo": "Omnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "2.5-3 metros",
-      "peso_aproximado": "75-100 kilogramos",
-      "descripcion": "Oviraptorosaurio conocido por fósiles encontrados protegiendo sus nidos, lo que indica cuidado parental.",
-      "imagen_url": "/images/citipati.webp"
-    },
-    {
-      "nombre": "Cryolophosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Jurásico Inferior",
-      "longitud_aproximada": "6-7 metros",
-      "peso_aproximado": "400-500 kilogramos",
-      "descripcion": "Terópodo antártico con una distintiva cresta ósea transversal en forma de abanico sobre su cabeza.",
-      "imagen_url": "/images/cryolophosaurus.webp"
-    },
-    {
-      "nombre": "Daspletosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "8-9 metros",
-      "peso_aproximado": "2-4 toneladas",
-      "descripcion": "Gran tiranosáurido, pariente cercano del T. Rex, pero ligeramente más antiguo y con algunas diferencias craneales.",
-      "imagen_url": "/images/daspletosaurus.webp"
-    },
-    {
-      "nombre": "Deinocheirus",
-      "tipo": "Omnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "10-11 metros",
-      "peso_aproximado": "6-7 toneladas",
-      "descripcion": "Extraño ornitomimosaurio gigante con brazos enormes, una joroba dorsal y un pico similar al de un pato.",
-      "imagen_url": "/images/deinocheirus.webp"
-    },
-    {
-      "nombre": "Dromaeosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "1.8-2 metros",
-      "peso_aproximado": "15-20 kilogramos",
-      "descripcion": "Pequeño depredador con una robusta cabeza y poderosas mandíbulas, además de la típica garra en hoz.",
-      "imagen_url": "/images/dromaeosaurus.webp"
-    },
-    {
-      "nombre": "Dryptosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "6.5-7.5 metros",
-      "peso_aproximado": "1-1.5 toneladas",
-      "descripcion": "Uno de los primeros tiranosauroideos descubiertos en Norteamérica, con garras grandes en las manos.",
-      "imagen_url": "/images/dryptosaurus.webp"
-    },
-    {
-      "nombre": "Einiosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "4.5-6 metros",
-      "peso_aproximado": "1-1.5 toneladas",
-      "descripcion": "Ceratópsido con un cuerno nasal curvado hacia adelante y un par de púas largas en la gola.",
-      "imagen_url": "/images/einiosaurus.webp"
-    },
-    {
-      "nombre": "Elaphrosaurus",
-      "tipo": "Carnívoro/Omnívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "5-6 metros",
-      "peso_aproximado": "200-250 kilogramos",
-      "descripcion": "Terópodo ligero y de cuello largo, con una estructura similar a los ornitomimosaurios posteriores.",
-      "imagen_url": "/images/elaphrosaurus.webp"
-    },
-    {
-      "nombre": "Eoraptor",
-      "tipo": "Omnívoro/Carnívoro",
-      "periodo": "Triásico Superior",
-      "longitud_aproximada": "1 metro",
-      "peso_aproximado": "10 kilogramos",
-      "descripcion": "Uno de los dinosaurios más antiguos y primitivos conocidos, con una dieta mixta.",
-      "imagen_url": "/images/eoraptor.webp"
-    },
-    {
-      "nombre": "Falcarius",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "3.7-4 metros",
-      "peso_aproximado": "100-150 kilogramos",
-      "descripcion": "Terizinosaurio primitivo con características tanto de carnívoros como de herbívoros, mostrando una transición dietética.",
-      "imagen_url": "/images/falcarius.webp"
-    },
-    {
-      "nombre": "Futalognkosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "25-30 metros",
-      "peso_aproximado": "40-60 toneladas",
-      "descripcion": "Gigantesco titanosaurio de Sudamérica, conocido por su esqueleto excepcionalmente completo.",
-      "imagen_url": "/images/futalognkosaurus.webp"
-    },
-    {
-      "nombre": "Gasosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Jurásico Medio",
-      "longitud_aproximada": "3.5-4 metros",
-      "peso_aproximado": "150-400 kilogramos",
-      "descripcion": "Terópodo basal de China, nombrado así porque su descubrimiento ocurrió durante la construcción de una instalación de gas.",
-      "imagen_url": "/images/gasosaurus.webp"
-    },
-    {
-      "nombre": "Gigantoraptor",
-      "tipo": "Omnívoro/Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "8 metros",
-      "peso_aproximado": "1.4-2 toneladas",
-      "descripcion": "Oviraptorosaurio gigante, mucho más grande que otros miembros de su grupo, con evidencia de plumas.",
-      "imagen_url": "/images/gigantoraptor.webp"
-    },
-    {
-      "nombre": "Gojirasaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Triásico Superior",
-      "longitud_aproximada": "5.5 metros",
-      "peso_aproximado": "150-200 kilogramos",
-      "descripcion": "Uno de los terópodos más grandes del Triásico, nombrado en honor al monstruo japonés Godzilla.",
-      "imagen_url": "/images/gojirasaurus.webp"
-    },
-    {
-      "nombre": "Gorgosaurus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "8-9 metros",
-      "peso_aproximado": "2-2.5 toneladas",
-      "descripcion": "Tiranosáurido muy similar al Albertosaurus, algunos paleontólogos los consideran el mismo género.",
-      "imagen_url": "/images/gorgosaurus.webp"
-    },
-    {
-      "nombre": "Gryposaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "8-9 metros",
-      "peso_aproximado": "2-4 toneladas",
-      "descripcion": "Hadrosaurio (pico de pato) con un distintivo arco nasal o joroba en el hocico.",
-      "imagen_url": "/images/gryposaurus.webp"
-    },
-    {
-      "nombre": "Hadrosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "7-8 metros",
-      "peso_aproximado": "2-4 toneladas",
-      "descripcion": "El primer esqueleto de dinosaurio casi completo montado en el mundo y el dinosaurio estatal de Nueva Jersey.",
-      "imagen_url": "/images/hadrosaurus.webp"
-    },
-    {
-      "nombre": "Hesperonychus",
-      "tipo": "Carnívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "0.5 metros",
-      "peso_aproximado": "1.5-2 kilogramos",
-      "descripcion": "Uno de los dinosaurios no avianos más pequeños conocidos de Norteamérica, un microraptorino.",
-      "imagen_url": "/images/hesperonychus.webp"
-    },
-    {
-      "nombre": "Homalocephale",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "1.5-1.8 metros",
-      "peso_aproximado": "40-45 kilogramos",
-      "descripcion": "Paquicefalosaurio con un cráneo aplanado y engrosado en lugar de una cúpula pronunciada.",
-      "imagen_url": "/images/homalocephale.webp"
-    },
-    {
-      "nombre": "Huayangosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Medio",
-      "longitud_aproximada": "4-4.5 metros",
-      "peso_aproximado": "0.5-1 tonelada",
-      "descripcion": "Estegosaurio primitivo de China, con placas más pequeñas y púas en los hombros.",
-      "imagen_url": "/images/huayangosaurus.webp"
-    },
-    {
-      "nombre": "Hypacrosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "9 metros",
-      "peso_aproximado": "3-4 toneladas",
-      "descripcion": "Hadrosaurio lambeosaurino con una cresta alta y hueca en la cabeza, similar a la del Corythosaurus.",
-      "imagen_url": "/images/hypacrosaurus.webp"
-    },
-    {
-      "nombre": "Irritator",
-      "tipo": "Carnívoro/Piscívoro",
-      "periodo": "Cretácico Inferior",
-      "longitud_aproximada": "7-8 metros",
-      "peso_aproximado": "1 tonelada",
-      "descripcion": "Espinosáurido brasileño, nombrado así por la frustración de los paleontólogos al encontrar el cráneo alterado por recolectores.",
-      "imagen_url": "/images/irritator.webp"
-    },
-    {
-      "nombre": "Isisaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Cretácico Superior",
-      "longitud_aproximada": "18 metros",
-      "peso_aproximado": "14-15 toneladas",
-      "descripcion": "Titanosaurio de la India con un cuello corto y grueso para un saurópodo, y huesos robustos.",
-      "imagen_url": "/images/isisaurus.webp"
-    },
-    {
-      "nombre": "Kentrosaurus",
-      "tipo": "Herbívoro",
-      "periodo": "Jurásico Superior",
-      "longitud_aproximada": "4.5-5 metros",
-      "peso_aproximado": "1-1.5 toneladas",
-      "descripcion": "Estegosaurio africano con una combinación de placas pequeñas en el cuello y el lomo anterior, y largas púas a lo largo del lomo posterior y la cola.",
-      "imagen_url": "/images/kentrosaurus.webp"
-    }
-  ]
-
+  {
+    "nombre": "Tyrannosaurus Rex",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "12-13 metros",
+    "peso_aproximado": "6-9 toneladas",
+    "descripcion": "Uno de los carnívoros terrestres más grandes, conocido por su cabeza masiva y pequeños brazos de dos dedos.",
+    "imagen_url": "/images/tyrannosaurus_rex.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Triceratops",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "8-9 metros",
+    "peso_aproximado": "6-12 toneladas",
+    "descripcion": "Famoso por su gran gola ósea y tres cuernos faciales, probablemente usados para defensa y exhibición.",
+    "imagen_url": "/images/triceratops.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Velociraptor",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "1.8-2 metros",
+    "peso_aproximado": "15-20 kilogramos",
+    "descripcion": "Pequeño y ágil depredador con una distintiva garra retráctil en forma de hoz en cada pie.",
+    "imagen_url": "/images/velociraptor.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Stegosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "9 metros",
+    "peso_aproximado": "5-7 toneladas",
+    "descripcion": "Reconocible por sus distintivas placas óseas a lo largo del lomo y cuatro púas en la cola (thagomizer).",
+    "imagen_url": "/images/stegosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Brachiosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "23-27 metros",
+    "peso_aproximado": "30-60 toneladas",
+    "descripcion": "Gigantesco saurópodo con patas delanteras más largas que las traseras y un cuello extremadamente largo, adaptado para alimentarse de árboles altos.",
+    "imagen_url": "/images/brachiosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Allosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "8.5-12 metros",
+    "peso_aproximado": "2-2.5 toneladas",
+    "descripcion": "Gran depredador con manos de tres dedos y crestas óseas sobre los ojos.",
+    "imagen_url": "/images/allosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Apatosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "21-23 metros",
+    "peso_aproximado": "18-35 toneladas",
+    "descripcion": "Saurópodo masivo, anteriormente conocido como Brontosaurus, con un cuello largo y una cola en forma de látigo.",
+    "imagen_url": "/images/apatosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Diplodocus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "24-33 metros",
+    "peso_aproximado": "10-16 toneladas",
+    "descripcion": "Uno de los dinosaurios más largos conocidos, caracterizado por su cuello y cola extremadamente largos.",
+    "imagen_url": "/images/diplodocus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Ankylosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "6-8 metros",
+    "peso_aproximado": "6-8 toneladas",
+    "descripcion": "Dinosaurio acorazado con placas óseas fusionadas y una pesada maza en el extremo de su cola.",
+    "imagen_url": "/images/ankylosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Spinosaurus",
+    "tipo": "Carnívoro/Piscívoro",
+    "periodo": "Cretácico Medio",
+    "longitud_aproximada": "12-18 metros",
+    "peso_aproximado": "7-20 toneladas",
+    "descripcion": "Depredador semiacuático con una distintiva vela dorsal alta, posiblemente el carnívoro más grande conocido.",
+    "imagen_url": "/images/spinosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Parasaurolophus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "9-10 metros",
+    "peso_aproximado": "2.5-4 toneladas",
+    "descripcion": "Hadrosaurio (pico de pato) conocido por su cresta craneal tubular y hueca, que pudo haber sido usada para vocalizar.",
+    "imagen_url": "/images/parasaurolophus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Carnotaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "7.5-9 metros",
+    "peso_aproximado": "1.3-2 toneladas",
+    "descripcion": "Depredador bípedo con distintivos cuernos sobre los ojos y brazos extremadamente pequeños.",
+    "imagen_url": "/images/carnotaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Iguanodon",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "10 metros",
+    "peso_aproximado": "3-4 toneladas",
+    "descripcion": "Uno de los primeros dinosaurios descubiertos, caracterizado por una púa cónica en el pulgar.",
+    "imagen_url": "/images/iguanodon.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Pachycephalosaurus",
+    "tipo": "Herbívoro/Omnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "4.5 metros",
+    "peso_aproximado": "450 kilogramos - 2 toneladas",
+    "descripcion": "Conocido por su cráneo extremadamente grueso y abovedado, probablemente usado en combates intraespecíficos.",
+    "imagen_url": "/images/pachycephalosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Dilophosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Jurásico Inferior",
+    "longitud_aproximada": "6-7 metros",
+    "peso_aproximado": "400 kilogramos",
+    "descripcion": "Depredador con dos crestas delgadas y redondeadas en su cráneo.",
+    "imagen_url": "/images/dilophosaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Compsognathus",
+    "tipo": "Carnívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "0.65-1.4 metros",
+    "peso_aproximado": "0.8 - 3.5 kilogramos",
+    "descripcion": "Pequeño dinosaurio terópodo del tamaño de un pollo, uno de los dinosaurios más pequeños conocidos.",
+    "imagen_url": "/images/compsognathus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Gallimimus",
+    "tipo": "Omnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "6-8 metros",
+    "peso_aproximado": "400-450 kilogramos",
+    "descripcion": "Dinosaurio parecido a un avestruz, con cuello largo, patas largas y probablemente muy veloz.",
+    "imagen_url": "/images/gallimimus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Argentinosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "30-39.7 metros",
+    "peso_aproximado": "70-100 toneladas",
+    "descripcion": "Uno de los animales terrestres más grandes de todos los tiempos, un titanosaurio saurópodo masivo.",
+    "imagen_url": "/images/argentinosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Giganotosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "12-13 metros",
+    "peso_aproximado": "6-8 toneladas",
+    "descripcion": "Uno de los carnívoros terrestres más grandes, rivalizando en tamaño con el Tyrannosaurus.",
+    "imagen_url": "/images/giganotosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Maiasaura",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "9 metros",
+    "peso_aproximado": "2-3 toneladas",
+    "descripcion": "Conocido como la \"buena lagarta madre\" por la evidencia de cuidado parental en sus nidos.",
+    "imagen_url": "/images/maiasaura.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Protoceratops",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "1.8-2.5 metros",
+    "peso_aproximado": "180-400 kilogramos",
+    "descripcion": "Pequeño dinosaurio ceratopsio con una gola ósea en el cuello pero sin cuernos faciales prominentes.",
+    "imagen_url": "/images/protoceratops.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Edmontosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "9-13 metros",
+    "peso_aproximado": "4-7 toneladas",
+    "descripcion": "Gran hadrosaurio (pico de pato) que vivía en grandes manadas.",
+    "imagen_url": "/images/edmontosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Baryonyx",
+    "tipo": "Carnívoro/Piscívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "7.5-10 metros",
+    "peso_aproximado": "1.2-1.9 toneladas",
+    "descripcion": "Depredador con una gran garra en el primer dedo de la mano y un hocico largo similar al de un cocodrilo, adaptado para pescar.",
+    "imagen_url": "/images/baryonyx.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Therizinosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "9-10 metros",
+    "peso_aproximado": "3-5 toneladas",
+    "descripcion": "Extraño dinosaurio con garras enormes en sus manos (hasta 1 metro de largo), probablemente usadas para alcanzar vegetación.",
+    "imagen_url": "/images/therizinosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Oviraptor",
+    "tipo": "Omnívoro/Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "1.5-2 metros",
+    "peso_aproximado": "25-35 kilogramos",
+    "descripcion": "Pequeño dinosaurio con una cresta distintiva y un pico sin dientes, a menudo encontrado cerca de nidos.",
+    "imagen_url": "/images/oviraptor.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Plateosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Triásico Superior",
+    "longitud_aproximada": "5-10 metros",
+    "peso_aproximado": "600 kilogramos - 4 toneladas",
+    "descripcion": "Uno de los primeros grandes dinosaurios herbívoros, un prosaurópodo.",
+    "imagen_url": "/images/plateosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Deinonychus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "3-3.4 metros",
+    "peso_aproximado": "70-100 kilogramos",
+    "descripcion": "Depredador dromeosáurido con una gran garra en forma de hoz en el segundo dedo del pie, inspiró al Velociraptor de Jurassic Park.",
+    "imagen_url": "/images/deinonychus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Coelophysis",
+    "tipo": "Carnívoro",
+    "periodo": "Triásico Superior",
+    "longitud_aproximada": "2-3 metros",
+    "peso_aproximado": "15-25 kilogramos",
+    "descripcion": "Uno de los primeros dinosaurios terópodos, ligero y ágil, a menudo encontrado en grandes agrupaciones fósiles.",
+    "imagen_url": "/images/coelophysis.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Centrosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "5-6 metros",
+    "peso_aproximado": "2-3 toneladas",
+    "descripcion": "Dinosaurio ceratopsio con un único cuerno nasal grande y una gola con pequeños cuernos.",
+    "imagen_url": "/images/centrosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Mamenchisaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "22-35 metros",
+    "peso_aproximado": "20-30 toneladas",
+    "descripcion": "Saurópodo conocido por tener uno de los cuellos más largos en relación con su cuerpo, hasta 15 metros.",
+    "imagen_url": "/images/mamenchisaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Albertosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "8-9 metros",
+    "peso_aproximado": "1.5-2.5 toneladas",
+    "descripcion": "Gran tiranosáurido, pariente cercano pero más pequeño y ligero que el T. Rex.",
+    "imagen_url": "/images/albertosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Euoplocephalus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "5-6 metros",
+    "peso_aproximado": "2-2.5 toneladas",
+    "descripcion": "Anquilosáurido fuertemente acorazado con párpados óseos y una maza en la cola.",
+    "imagen_url": "/images/euoplocephalus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Corythosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "8-9 metros",
+    "peso_aproximado": "3-4 toneladas",
+    "descripcion": "Hadrosaurio con una distintiva cresta semicircular en la cabeza, similar a un casco corintio.",
+    "imagen_url": "/images/corythosaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Struthiomimus",
+    "tipo": "Omnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "4.3 metros",
+    "peso_aproximado": "150-200 kilogramos",
+    "descripcion": "Dinosaurio ornitomímido (imitador de aves) con apariencia de avestruz, probablemente rápido y ágil.",
+    "imagen_url": "/images/struthiomimus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Pterodactylus",
+    "tipo": "Carnívoro/Piscívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "Envergadura de 1 metro (no es un dinosaurio, sino un pterosaurio)",
+    "peso_aproximado": "1-4 kilogramos (estimado para pterosaurios de tamaño similar)",
+    "descripcion": "Pequeño reptil volador (pterosaurio) con una cresta en la cabeza y dientes pequeños. A menudo confundido con un dinosaurio.",
+    "imagen_url": "/images/pterodactylus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Archaeopteryx",
+    "tipo": "Carnívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "0.5 metros (similar a un cuervo)",
+    "peso_aproximado": "0.8-1 kilogramo",
+    "descripcion": "Considerado un eslabón entre los dinosaurios no avianos y las aves modernas, poseía plumas y dientes.",
+    "imagen_url": "/images/archaeopteryx.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Saltasaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "12-13 metros",
+    "peso_aproximado": "7-8 toneladas",
+    "descripcion": "Titanosaurio saurópodo notable por tener pequeñas placas óseas (osteodermos) incrustadas en su piel para protección.",
+    "imagen_url": "/images/saltasaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Utahraptor",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "5-7 metros",
+    "peso_aproximado": "200-500 kilogramos",
+    "descripcion": "Uno de los dromeosáuridos más grandes, con una garra en forma de hoz de hasta 24 cm.",
+    "imagen_url": "/images/utahraptor.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Ceratosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "5-7 metros",
+    "peso_aproximado": "0.5-1 tonelada",
+    "descripcion": "Depredador con un distintivo cuerno nasal grande y un par de crestas más pequeñas sobre los ojos.",
+    "imagen_url": "/images/ceratosaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Herrerasaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Triásico Superior",
+    "longitud_aproximada": "3-6 metros",
+    "peso_aproximado": "200-350 kilogramos",
+    "descripcion": "Uno de los dinosaurios más antiguos conocidos, un depredador basal con una estructura corporal primitiva.",
+    "imagen_url": "/images/herrerasaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Microraptor",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "0.4-0.8 metros",
+    "peso_aproximado": "Aproximadamente 1 kilogramo",
+    "descripcion": "Pequeño dinosaurio dromeosáurido con plumas en las cuatro extremidades, lo que sugiere capacidad de planeo o vuelo.",
+    "imagen_url": "/images/microraptor.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Shantungosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "14-16 metros",
+    "peso_aproximado": "10-16 toneladas",
+    "descripcion": "Uno de los hadrosaurios (picos de pato) más grandes conocidos, con miles de dientes para triturar plantas.",
+    "imagen_url": "/images/shantungosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Abelisaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "7-9 metros",
+    "peso_aproximado": "1.5-2.5 toneladas",
+    "descripcion": "Depredador sudamericano conocido por su cráneo corto y robusto con grandes aberturas.",
+    "imagen_url": "/images/abelisaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Achelousaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "6 metros",
+    "peso_aproximado": "2-3 toneladas",
+    "descripcion": "Ceratópsido con protuberancias óseas sobre los ojos y en el hocico en lugar de cuernos definidos.",
+    "imagen_url": "/images/achelousaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Acrocanthosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "11-12 metros",
+    "peso_aproximado": "5-6 toneladas",
+    "descripcion": "Gran terópodo con espinas neurales altas a lo largo de su espalda, formando una especie de vela baja.",
+    "imagen_url": "/images/acrocanthosaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Aerosteon",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "9 metros",
+    "peso_aproximado": "2 toneladas",
+    "descripcion": "Terópodo con evidencia de un sistema respiratorio similar al de las aves, con sacos aéreos.",
+    "imagen_url": "/images/aerosteon.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Afrovenator",
+    "tipo": "Carnívoro",
+    "periodo": "Jurásico Medio",
+    "longitud_aproximada": "7-8 metros",
+    "peso_aproximado": "1-1.5 toneladas",
+    "descripcion": "Terópodo megalosáurido descubierto en África, con un cuerpo relativamente ligero y brazos largos.",
+    "imagen_url": "/images/afrovenator.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Agilisaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Medio",
+    "longitud_aproximada": "1.2-1.7 metros",
+    "peso_aproximado": "10-40 kilogramos",
+    "descripcion": "Pequeño y ágil dinosaurio ornitisquio, probablemente un corredor rápido.",
+    "imagen_url": "/images/agilisaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Alamosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "20-30 metros",
+    "peso_aproximado": "30-70 toneladas",
+    "descripcion": "Gran titanosaurio saurópodo, uno de los últimos saurópodos de Norteamérica.",
+    "imagen_url": "/images/alamosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Alioramus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "5-6 metros",
+    "peso_aproximado": "300-700 kilogramos",
+    "descripcion": "Tiranosáurido asiático con un hocico largo y una hilera de pequeñas crestas nasales.",
+    "imagen_url": "/images/alioramus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Amargasaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "9-10 metros",
+    "peso_aproximado": "2-3 toneladas",
+    "descripcion": "Saurópodo dicreosáurido con dos hileras paralelas de espinas neurales altas y bifurcadas a lo largo de su cuello y espalda.",
+    "imagen_url": "/images/amargasaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Anzu",
+    "tipo": "Omnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "3-3.5 metros",
+    "peso_aproximado": "200-300 kilogramos",
+    "descripcion": "Oviraptorosaurio norteamericano apodado \"pollo del infierno\" por su extraña apariencia con cresta y plumas.",
+    "imagen_url": "/images/anzu.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Arrhinoceratops",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "4.5-6 metros",
+    "peso_aproximado": "1.5-2.5 toneladas",
+    "descripcion": "Ceratópsido con una gola ancha y dos cuernos largos sobre los ojos, pero un cuerno nasal pequeño o ausente.",
+    "imagen_url": "/images/arrhinoceratops.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Aucasaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "5.5-6 metros",
+    "peso_aproximado": "700 kilogramos - 1 tonelada",
+    "descripcion": "Abelisáurido con brazos aún más reducidos que el Carnotaurus, casi vestigiales.",
+    "imagen_url": "/images/aucasaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Austroraptor",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "5-6 metros",
+    "peso_aproximado": "300-400 kilogramos",
+    "descripcion": "Gran dromeosáurido del hemisferio sur con un hocico largo y bajo, y brazos relativamente cortos.",
+    "imagen_url": "/images/austroraptor.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Avimimus",
+    "tipo": "Omnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "1.5 metros",
+    "peso_aproximado": "15-20 kilogramos",
+    "descripcion": "Pequeño dinosaurio parecido a un ave, con características que sugieren que tenía plumas.",
+    "imagen_url": "/images/avimimus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Camarasaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "15-23 metros",
+    "peso_aproximado": "15-20 toneladas",
+    "descripcion": "Saurópodo común en Norteamérica, con un cráneo corto y cuadrado y grandes aberturas nasales.",
+    "imagen_url": "/images/camarasaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Carcharodontosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "12-13.5 metros",
+    "peso_aproximado": "6-15 toneladas",
+    "descripcion": "Gigantesco carnívoro africano con dientes largos y serrados, similares a los de un tiburón.",
+    "imagen_url": "/images/carcharodontosaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Caudipteryx",
+    "tipo": "Omnívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "0.7-1 metro",
+    "peso_aproximado": "5-7 kilogramos",
+    "descripcion": "Pequeño dinosaurio con plumas simétricas en brazos y cola, probablemente no volador.",
+    "imagen_url": "/images/caudipteryx.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Chasmosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "4.3-5 metros",
+    "peso_aproximado": "1.5-2.5 toneladas",
+    "descripcion": "Ceratópsido con una gola muy larga y rectangular, a menudo con grandes fenestras (aberturas).",
+    "imagen_url": "/images/chasmosaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Citipati",
+    "tipo": "Omnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "2.5-3 metros",
+    "peso_aproximado": "75-100 kilogramos",
+    "descripcion": "Oviraptorosaurio conocido por fósiles encontrados protegiendo sus nidos, lo que indica cuidado parental.",
+    "imagen_url": "/images/citipati.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Cryolophosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Jurásico Inferior",
+    "longitud_aproximada": "6-7 metros",
+    "peso_aproximado": "400-500 kilogramos",
+    "descripcion": "Terópodo antártico con una distintiva cresta ósea transversal en forma de abanico sobre su cabeza.",
+    "imagen_url": "/images/cryolophosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Daspletosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "8-9 metros",
+    "peso_aproximado": "2-4 toneladas",
+    "descripcion": "Gran tiranosáurido, pariente cercano del T. Rex, pero ligeramente más antiguo y con algunas diferencias craneales.",
+    "imagen_url": "/images/daspletosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Deinocheirus",
+    "tipo": "Omnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "10-11 metros",
+    "peso_aproximado": "6-7 toneladas",
+    "descripcion": "Extraño ornitomimosaurio gigante con brazos enormes, una joroba dorsal y un pico similar al de un pato.",
+    "imagen_url": "/images/deinocheirus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Dromaeosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "1.8-2 metros",
+    "peso_aproximado": "15-20 kilogramos",
+    "descripcion": "Pequeño depredador con una robusta cabeza y poderosas mandíbulas, además de la típica garra en hoz.",
+    "imagen_url": "/images/dromaeosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Dryptosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "6.5-7.5 metros",
+    "peso_aproximado": "1-1.5 toneladas",
+    "descripcion": "Uno de los primeros tiranosauroideos descubiertos en Norteamérica, con garras grandes en las manos.",
+    "imagen_url": "/images/dryptosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Einiosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "4.5-6 metros",
+    "peso_aproximado": "1-1.5 toneladas",
+    "descripcion": "Ceratópsido con un cuerno nasal curvado hacia adelante y un par de púas largas en la gola.",
+    "imagen_url": "/images/einiosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Elaphrosaurus",
+    "tipo": "Carnívoro/Omnívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "5-6 metros",
+    "peso_aproximado": "200-250 kilogramos",
+    "descripcion": "Terópodo ligero y de cuello largo, con una estructura similar a los ornitomimosaurios posteriores.",
+    "imagen_url": "/images/elaphrosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Eoraptor",
+    "tipo": "Omnívoro/Carnívoro",
+    "periodo": "Triásico Superior",
+    "longitud_aproximada": "1 metro",
+    "peso_aproximado": "10 kilogramos",
+    "descripcion": "Uno de los dinosaurios más antiguos y primitivos conocidos, con una dieta mixta.",
+    "imagen_url": "/images/eoraptor.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Falcarius",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "3.7-4 metros",
+    "peso_aproximado": "100-150 kilogramos",
+    "descripcion": "Terizinosaurio primitivo con características tanto de carnívoros como de herbívoros, mostrando una transición dietética.",
+    "imagen_url": "/images/falcarius.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Futalognkosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "25-30 metros",
+    "peso_aproximado": "40-60 toneladas",
+    "descripcion": "Gigantesco titanosaurio de Sudamérica, conocido por su esqueleto excepcionalmente completo.",
+    "imagen_url": "/images/futalognkosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Gasosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Jurásico Medio",
+    "longitud_aproximada": "3.5-4 metros",
+    "peso_aproximado": "150-400 kilogramos",
+    "descripcion": "Terópodo basal de China, nombrado así porque su descubrimiento ocurrió durante la construcción de una instalación de gas.",
+    "imagen_url": "/images/gasosaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Gigantoraptor",
+    "tipo": "Omnívoro/Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "8 metros",
+    "peso_aproximado": "1.4-2 toneladas",
+    "descripcion": "Oviraptorosaurio gigante, mucho más grande que otros miembros de su grupo, con evidencia de plumas.",
+    "imagen_url": "/images/gigantoraptor.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Gojirasaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Triásico Superior",
+    "longitud_aproximada": "5.5 metros",
+    "peso_aproximado": "150-200 kilogramos",
+    "descripcion": "Uno de los terópodos más grandes del Triásico, nombrado en honor al monstruo japonés Godzilla.",
+    "imagen_url": "/images/gojirasaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Gorgosaurus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "8-9 metros",
+    "peso_aproximado": "2-2.5 toneladas",
+    "descripcion": "Tiranosáurido muy similar al Albertosaurus, algunos paleontólogos los consideran el mismo género.",
+    "imagen_url": "/images/gorgosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Gryposaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "8-9 metros",
+    "peso_aproximado": "2-4 toneladas",
+    "descripcion": "Hadrosaurio (pico de pato) con un distintivo arco nasal o joroba en el hocico.",
+    "imagen_url": "/images/gryposaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Hadrosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "7-8 metros",
+    "peso_aproximado": "2-4 toneladas",
+    "descripcion": "El primer esqueleto de dinosaurio casi completo montado en el mundo y el dinosaurio estatal de Nueva Jersey.",
+    "imagen_url": "/images/hadrosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Hesperonychus",
+    "tipo": "Carnívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "0.5 metros",
+    "peso_aproximado": "1.5-2 kilogramos",
+    "descripcion": "Uno de los dinosaurios no avianos más pequeños conocidos de Norteamérica, un microraptorino.",
+    "imagen_url": "/images/hesperonychus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Homalocephale",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "1.5-1.8 metros",
+    "peso_aproximado": "40-45 kilogramos",
+    "descripcion": "Paquicefalosaurio con un cráneo aplanado y engrosado en lugar de una cúpula pronunciada.",
+    "imagen_url": "/images/homalocephale.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Huayangosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Medio",
+    "longitud_aproximada": "4-4.5 metros",
+    "peso_aproximado": "0.5-1 tonelada",
+    "descripcion": "Estegosaurio primitivo de China, con placas más pequeñas y púas en los hombros.",
+    "imagen_url": "/images/huayangosaurus.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Hypacrosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "9 metros",
+    "peso_aproximado": "3-4 toneladas",
+    "descripcion": "Hadrosaurio lambeosaurino con una cresta alta y hueca en la cabeza, similar a la del Corythosaurus.",
+    "imagen_url": "/images/hypacrosaurus.webp",
+    "image_position": "card__img--left"
+  },
+  {
+    "nombre": "Irritator",
+    "tipo": "Carnívoro/Piscívoro",
+    "periodo": "Cretácico Inferior",
+    "longitud_aproximada": "7-8 metros",
+    "peso_aproximado": "1 tonelada",
+    "descripcion": "Espinosáurido brasileño, nombrado así por la frustración de los paleontólogos al encontrar el cráneo alterado por recolectores.",
+    "imagen_url": "/images/irritator.webp",
+    "image_position": "card__img--right"
+  },
+  {
+    "nombre": "Isisaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Cretácico Superior",
+    "longitud_aproximada": "18 metros",
+    "peso_aproximado": "14-15 toneladas",
+    "descripcion": "Titanosaurio de la India con un cuello corto y grueso para un saurópodo, y huesos robustos.",
+    "imagen_url": "/images/isisaurus.webp",
+    "image_position": ""
+  },
+  {
+    "nombre": "Kentrosaurus",
+    "tipo": "Herbívoro",
+    "periodo": "Jurásico Superior",
+    "longitud_aproximada": "4.5-5 metros",
+    "peso_aproximado": "1-1.5 toneladas",
+    "descripcion": "Estegosaurio africano con una combinación de placas pequeñas en el cuello y el lomo anterior, y largas púas a lo largo del lomo posterior y la cola.",
+    "imagen_url": "/images/kentrosaurus.webp",
+    "image_position": ""
+  }
+]

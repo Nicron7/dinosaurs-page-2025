@@ -2,8 +2,7 @@
 const  { dino } = Astro.props
 const imageDefault = "/images/default.webp"
 let color = "card-red"
-const { nombre, tipo, periodo, longitud_aproximada, peso_aproximado, descripcion, imagen_url } = dino
-
+const { nombre, tipo, periodo, longitud_aproximada, peso_aproximado, descripcion, imagen_url, image_position } = dino
 
 if (periodo.includes("Jurásico")) {
     color = "card-orange"
@@ -16,7 +15,7 @@ if (periodo.includes("Jurásico")) {
 
 <div class={color + " card"} data-dieta={tipo} data-era={periodo}>
     <div class="card__img__cont">
-        <img src={imagen_url || imageDefault} alt={nombre} class="card__img">
+        <img src={imagen_url || imageDefault} alt={nombre} class={image_position + " card__img"}>
     </div>
     <div class="card__text">
         <h3 class="card__title">{nombre}</h3>
@@ -182,6 +181,12 @@ if (periodo.includes("Jurásico")) {
         height: 100%;
         object-fit: cover;
         border-radius: 1rem 1rem 0 0;
+    }
+    .card__img--left {
+        object-position: left;
+    }
+    .card__img--right {
+        object-position: right;
     }
 </style>
 
