@@ -5,7 +5,7 @@
         <div class="eras__grid">
             <article class="eras__item">
                 <div class="eras__img__cont">
-                    <img src="/triasico.webp" alt="" class="eras__img" loading="lazy">
+                    <img src="/ages-section/triasico.webp" alt="" class="eras__img" loading="lazy">
                 </div>
                 <div class="eras__text">
                     <h3 class="eras__item__title">Triásico</h3>
@@ -20,7 +20,7 @@
             </article> <!-- Era Card -->
             <article class="eras__item">
                 <div class="eras__img__cont">
-                    <img src="/jurasico.webp" alt="" class="eras__img">
+                    <img src="/ages-section/jurasico.webp" alt="" class="eras__img">
                 </div>
                 <div class="eras__text">
                     <h3 class="eras__item__title">Jurásico</h3>
@@ -35,7 +35,7 @@
             </article> <!-- Era Card -->
             <article class="eras__item">
                 <div class="eras__img__cont">
-                    <img src="/cretacico.webp" alt="" class="eras__img">
+                    <img src="/ages-section/cretacico.webp" alt="" class="eras__img">
                 </div>
                 <div class="eras__text">
                     <h3 class="eras__item__title">Cretácico</h3>
@@ -55,7 +55,7 @@
                 <p class="eras__ending__desc">Los dinosaurios reinaron sobre la Tierra durante más de <span>160 millones de años</span>, adaptándose a todo tipo de ambientes, desde desiertos hasta selvas costeras. Pero incluso los gigantes más imponentes enfrentaron su fin.</p>
                 <p class="eras__ending__desc">Al cierre del <span>periodo Cretácico</span>, el mundo cambió de forma repentina y violenta. Algo ocurrió que transformó el planeta para siempre... y puso fin al reinado de los dinosaurios.</p>
             </div>
-            <img src="/extincion.png" alt="" class="eras__ending__img">
+            <img src="/ages-section/footer/extincion.png" alt="" class="eras__ending__img">
         </article>
     </div>
 </section>
@@ -104,6 +104,7 @@
 				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 				gap: 2rem;
 				justify-items: center;
+				width: 100%;
 			}
 			.eras__ending {
 				font-size: 1.1rem;
@@ -142,6 +143,9 @@
 				max-width: 400px;
 				&:nth-child(2) {
 					background-color: var(--primary-hover);
+					img {
+						object-position: top;
+					}
 					.eras__item__list {
 						&::-webkit-scrollbar-track {
 							background-color: var(--primary-color);
@@ -183,14 +187,14 @@
 				}
 				.eras__img__cont {
 					width: 100%;
-					max-height: 230px;
+					height: 230px;
 					overflow: hidden;
 					border-radius: 1rem 1rem 0 0;
 					align-self: stretch;
 				}
 				img {
 					width: 100%;
-					height: auto;
+					height: 100%;
 					border-radius: 1rem 1rem 0 0;
 					margin-bottom: .5rem;
 					object-fit: cover;
