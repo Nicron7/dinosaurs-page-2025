@@ -20,10 +20,12 @@ if (periodo.includes("Jurásico")) {
     </div>
     <div class="card__text">
         <h3 class="card__title">{nombre}</h3>
-        <p class="card__type"><span>Dieta:</span> {tipo}</p>
-        <p class="card__weight"><span>Peso:</span> {peso_aproximado}</p>
-        <p class="card__age"><span>Período:</span> {periodo}</p>
-        <p class="card__length"><span>Tamaño:</span> {longitud_aproximada}</p>
+        <div class="card__info">
+            <p class="card__type"><span>Dieta:</span> {tipo}</p>
+            <p class="card__weight"><span>Peso:</span> {peso_aproximado}</p>
+            <p class="card__age"><span>Período:</span> {periodo}</p>
+            <p class="card__length"><span>Tamaño:</span> {longitud_aproximada}</p>
+        </div>
         <div class="card__desc__cont">
             <p class="card__subtitle">Descripción<i class="fa-solid fa-chevron-right"></i></p>
             <p class="card__desc">{descripcion}</p>
@@ -47,12 +49,28 @@ if (periodo.includes("Jurásico")) {
             background-color: var(--secondary-color);
             padding: .3rem .8rem;
         }
+        .card__desc {
+            background-color: var(--secondary-hover);
+        }
+        .card__info {
+            &::-webkit-scrollbar-track {
+                background-color: var(--secondary-color);
+            }
+        }
     }
     .card-orange {
         background-color: var(--primary-hover);
         .card__type, .card__weight, .card__age, .card__length {
             background-color: var(--primary-color);
             padding: .3rem .8rem;
+        }
+        .card__desc {
+            background-color: var(--primary-hover);
+        }
+        .card__info {
+            &::-webkit-scrollbar-track {
+                background-color: var(--primary-color);
+            }
         }
     }
     .card-green {
@@ -62,7 +80,12 @@ if (periodo.includes("Jurásico")) {
             padding: .3rem .8rem;
         }
         .card__desc {
-            background-color: ;
+            background-color:var(--dark-green) ;
+        }
+        .card__info {
+            &::-webkit-scrollbar-track {
+                background-color: var(--green);
+            }
         }
     }
     .card__type, .card__weight, .card__age, .card__length {
@@ -74,8 +97,17 @@ if (periodo.includes("Jurásico")) {
         gap: .5rem;
         align-items: center;
         cursor: pointer;
+        border: 2px solid var(--light-grey);
+        padding: .2rem 1rem;
+        width: fit-content;
+        border-radius: .5rem;
+        font-weight: 500;
+        transition: all .2s ease-in-out;
         i {
             transition: all .3s ease-in-out;
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, .2);
         }
     }
     .card__desc__cont {
@@ -83,12 +115,39 @@ if (periodo.includes("Jurásico")) {
         margin-top: 1rem;
     }
     .card__desc {
-        height: 0;
-        transition: height .3s ease-in-out;
-        margin-top: .5rem;
+        transition: all .3s ease-in-out;
+        position: absolute;
+        top: 95.5%;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: 10;
+        padding: 0 1.5rem;
+        max-height: 0;
+        border-radius: 0 0 1rem 1rem;
+        
     }
     .card__desc--active {
-        height: auto;
+        max-height: 150px;
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+        box-shadow: 5px 10px 0 var(--light-black);
+    }
+    .card__info {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        max-height: 158.38px;
+        overflow-y: auto;
+        padding-right: .3rem;
+        &::-webkit-scrollbar {
+            width: 8px;             
+            height: 10px;          
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--light-grey);
+            border-radius: 3px;
+        }
     }
     .card__subtitle--active {
         i {
@@ -96,12 +155,13 @@ if (periodo.includes("Jurásico")) {
         }
     }
     .card__text {
-        padding: 1.5rem;
-        padding-top: 1rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
         color: var(--white);
         display: flex;
         flex-direction: column;
         gap: .5rem;
+        position: relative;
+        width: 100%;
         span {
             font-weight: 600;
         }
