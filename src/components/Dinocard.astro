@@ -27,7 +27,9 @@ if (periodo.includes("Jurásico")) {
         </div>
         <div class="card__desc__cont">
             <p class="card__subtitle">Descripción<i class="fa-solid fa-chevron-right"></i></p>
-            <p class="card__desc">{descripcion}</p>
+            <div class="card__desc__cover">
+                <p class="card__desc">{descripcion}</p>
+            </div>
         </div>
     </div>
 </div>
@@ -41,15 +43,6 @@ if (periodo.includes("Jurásico")) {
         align-items: center;
         justify-content: top;
         max-width: 400px;
-        &:hover .card__img {
-            transform: scale(1.07);
-            filter: brightness(0.8);
-        }
-        &:hover .card__title {
-            &:after {
-                width: 30%;
-            }
-        }
     }
     .card-red {
         background-color: var(--secondary-hover);
@@ -57,7 +50,7 @@ if (periodo.includes("Jurásico")) {
             background-color: var(--secondary-color);
             padding: .3rem .8rem;
         }
-        .card__desc {
+        .card__desc__cover {
             background-color: var(--secondary-hover);
         }
         .card__info {
@@ -72,7 +65,7 @@ if (periodo.includes("Jurásico")) {
             background-color: var(--primary-color);
             padding: .3rem .8rem;
         }
-        .card__desc {
+        .card__desc__cover {
             background-color: var(--primary-hover);
         }
         .card__info {
@@ -87,7 +80,7 @@ if (periodo.includes("Jurásico")) {
             background-color: var(--green);
             padding: .3rem .8rem;
         }
-        .card__desc {
+        .card__desc__cover {
             background-color:var(--dark-green) ;
         }
         .card__info {
@@ -123,10 +116,10 @@ if (periodo.includes("Jurásico")) {
         overflow: hidden;
         margin-top: 1rem;
     }
-    .card__desc {
+    .card__desc__cover {
         transition: all .3s ease-in-out;
         position: absolute;
-        top: 95.5%;
+        top: calc(100% - 1rem);
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -135,10 +128,10 @@ if (periodo.includes("Jurásico")) {
         height: 0;
         border-radius: 0 0 1rem 1rem;
     }
-    .card__desc--active {
+    .card__desc__cover--active {
         height: auto;
         padding-bottom: 1.5rem;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         box-shadow: 5px 10px 0 var(--light-black);
     }
     .card__info {
@@ -209,15 +202,29 @@ if (periodo.includes("Jurásico")) {
     .card__img--right {
         object-position: right;
     }
+    @media (width > 768px) {
+        .card {
+            transition: all .3s ease;
+            &:hover .card__img {
+            transform: scale(1.07);
+            filter: brightness(0.8);
+            }
+            &:hover .card__title {
+                &:after {
+                    width: 30%;
+                }
+            }
+        }
+    }
 </style>
 
 <script>
     const subtitles = document.querySelectorAll(".card__subtitle")
-    const descs = document.querySelectorAll(".card__desc")
+    const descs = document.querySelectorAll(".card__desc__cover")
 
     subtitles.forEach((subtitle, index) => {
         subtitle.addEventListener("click", () => {
-            descs[index].classList.toggle("card__desc--active")
+            descs[index].classList.toggle("card__desc__cover--active")
             subtitles[index].classList.toggle("card__subtitle--active")
         })
     })
